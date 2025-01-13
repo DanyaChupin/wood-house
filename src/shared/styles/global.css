@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'SFPro';
+	font-style: normal;
+	font-weight: 800;
+	src: url('/fonts/sf-pro-bold.woff2') format('woff2');
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'SFPro';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/sf-pro-regular.woff2') format('woff2');
+	font-display: fallback;
+}
+
+@font-face {
+	font-family: 'SoyuzGrotesk';
+	font-style: normal;
+	font-weight: 800;
+	src: url('/fonts/soyuz-grotesk-bold.woff2') format('woff2');
+	font-display: fallback;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'SoyuzGrotesk', sans-serif;
+	max-width: 1440px;
+	display: flex;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(229, 231, 235, 1) 61%,
+		rgba(229, 231, 235, 1) 81%,
+		rgba(255, 255, 255, 1) 100%
+	);
+	color: black;
+	font-size: 16px;
+}
+p {
+	font-family: 'SFPro', sans-serif;
+	font-weight: 400;
+}
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide::-webkit-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
