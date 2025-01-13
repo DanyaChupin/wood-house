@@ -36,7 +36,9 @@ export default {
 				xl: '1280px',
 				'2xl': '1440px',
 			},
-			colors: {},
+			colors: {
+				GRAY_500: '#4B4B4B',
+			},
 		},
 	},
 	plugins: [],

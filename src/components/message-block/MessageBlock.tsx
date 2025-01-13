@@ -21,6 +21,7 @@ export function MessageBlock({ title, description }: IMessageBlock) {
 			>
 				<GoToNextButton
 					padding="14px 0px"
+					borderRadius="16px"
 					fontSize="14px"
 					nextUrl="/bron"
 				>

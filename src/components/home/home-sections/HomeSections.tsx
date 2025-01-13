@@ -56,7 +56,7 @@ export function HomeSections() {
 				</div>
 			</MessageWrapper>
 			<div className="flex flex-col gap-[16px] lg:gap-[22px] 2xl:gap-[30px] mb-[300px]">
-				<div className="flex w-[calc(100%+30px)] sm:w-full sm:ml-0 sm:flex-row-reverse ml-[-15px] overflow-x-scroll sm:overflow-x-visible gap-[12px] lg:gap-[16px] flex-nowrap scrollbar-hide">
+				<div className="flex w-[calc(100%+30px)] sm:w-full sm:ml-0 sm:flex-row-reverse ml-[-15px] overflow-x-scroll sm:overflow-x-visible gap-[12px] lg:gap-[16px] 2xl:gap-[20px] flex-nowrap scrollbar-hide">
 					<div className="hidden sm:block w-[45%] h-[368px] sm:h-[200px] md:h-full sm:max-h-[232px]">
 						<ImageBlock
 							imgUrl={houseElemSeven}
@@ -87,37 +87,6 @@ export function HomeSections() {
 					массажем или арома-терапией в сауне
 				</p>
 			</div>
-
-			{/* <div className="flex flex-col gap-[16px] xl:gap-[22px] 2xl:gap-[30px] mb-[300px]"> */}
-			{/* 	<div className="w-[calc(100%+30px)] sm:w-full scrollbar-hide overflow-x-scroll sm:overflow-x-visible flex ml-[-15px] sm:ml-0 gap-[12px]"> */}
-			{/* 		<div className="hidden shrink-0 sm:block sm:shrink sm:w-[30%] lg:w-[25%] self-end mb-[-30px]"> */}
-			{/* 			<ImageBlock */}
-			{/* 				imgUrl={houseElemSeven} */}
-			{/* 				className="w-full h-[368px] sm:h-[60%]" */}
-			{/* 				alt="Посуточная аренда загородного дома в 50 км от МКАД." */}
-			{/* 			/> */}
-			{/* 		</div> */}
-			{/* 		<div className="w-[85%] h-full shrink-0 ml-[15px] sm:ml-0 sm:w-[40%] lg:w-[55%]"> */}
-			{/* 			<ImageBlock */}
-			{/* 				imgUrl={houseElemFive} */}
-			{/* 				className="w-full h-[368px] sm:h-[300px] lg:h-[350px] xl:h-[400px]" */}
-			{/* 				alt="Посуточная аренда загородного дома в 50 км от МКАД." */}
-			{/* 			/> */}
-			{/* 		</div> */}
-			{/* 		<div className="w-[calc(85%+15px)] shrink-0 sm:shrink pr-[15px] sm:pr-0 sm:w-[30%] lg:w-[25%]"> */}
-			{/* 			<ImageBlock */}
-			{/* 				imgUrl={houseElemSix} */}
-			{/* 				className="w-full h-[368px] sm:h-[60%]" */}
-			{/* 				alt="Посуточная аренда загородного дома в 50 км от МКАД." */}
-			{/* 			/> */}
-			{/* 		</div> */}
-			{/* 	</div> */}
-			{/* 	<p className="max-w-[85%] sm:max-w-[60%] lg:max-w-[50%] sm:ml-[30%] lg:ml-[22.5%] leading-[24px]"> */}
-			{/* 		У каждого дома собственная сауна, а на улице теплая */}
-			{/* 		купель. Можно обратиться  к профессионалам и */}
-			{/* 		насладиться массажем или арома-терапией в сауне */}
-			{/* 	</p> */}
-			{/* </div> */}
 		</>
 	)
 }

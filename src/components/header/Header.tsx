@@ -20,6 +20,7 @@ export function Header() {
 				<div className="hidden lg:block w-[163px]">
 					<GoToNextButton
 						nextUrl="/bron"
+						borderRadius="14px"
 						padding="8px 0px"
 						fontSize="12px"
 					/>
