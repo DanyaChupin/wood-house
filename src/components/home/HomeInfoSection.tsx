@@ -10,7 +10,7 @@ import houseElem7 from '../../shared/images/house-one-elem-7.png'
 
 export function HomeInfoSection() {
 	return (
-		<>
+		<section>
 			<MessageWrapper
 				title="Это тихое место идеально подходит для тех, кто ищет гармонию с природой и уединение от городской суеты"
 				description="Коттеджный комплекс Вудхаус находится в тихом  и красивом месте: на окраине поселка рядом  с лесом на берегу маленькой речки"
@@ -86,6 +86,6 @@ export function HomeInfoSection() {
 					массажем или арома-терапией в сауне
 				</p>
 			</div>
-		</>
+		</section>
 	)
 }

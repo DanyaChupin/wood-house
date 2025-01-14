@@ -11,11 +11,52 @@ export default {
 		extend: {
 			animation: {
 				fadeIn: '0.5s fadeIn forwards',
+				slideRightSmoke: '8s slideRightSmoke forwards',
 			},
 			transitionProperty: {
 				TRANSLATE_OPACITY: 'transform, opacity',
 			},
 			keyframes: {
+				slideRightSmoke: {
+					'0%': {
+						transform: 'translateX(-50%)',
+						opacity: '0',
+						filter: 'blur(3px)',
+					},
+					'10%': {
+						opacity: '0',
+						transform: 'translateX(-15%)',
+					},
+					'15%': {
+						opacity: '1',
+					},
+					'20%': {
+						transform: 'translateX(-0.1%)',
+						opacity: '1',
+						filter: 'blur(0px)',
+					},
+					'25%': {
+						transform: 'translateX(0%)',
+					},
+					'75%': {
+						transform: 'translateX(0%)',
+					},
+					'80%': {
+						transform: 'translateX(0.1%)',
+						opacity: '1',
+						filter: 'blur(0px)',
+					},
+					'85%': {
+						opacity: '0',
+					},
+					'90%': {
+						transform: 'translateX(15%)',
+					},
+					'100%': {
+						transform: 'translateX(50%)',
+						filter: 'blur(3px)',
+					},
+				},
 				fadeIn: {
 					'0%': {
 						opacity: '0',

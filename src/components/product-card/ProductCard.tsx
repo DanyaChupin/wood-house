@@ -13,7 +13,7 @@ const ProductSliderDesk = dynamic(() => import('./ui/ProductSlideDesk'))
 export function ProductCard({ house }: { house: IHouse }) {
 	const { isMobile } = useBreakpoints()
 	return (
-		<div className="mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
+		<section className="mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
 			<div className="flex flex-col md:flex-row md:justify-between md:items-center gap-[8px] mb-[16px] lg:mb-[22px] 2xl:mb-[30px]">
 				<ProductTitle title={house.title} />
 				<ProductDescription
@@ -38,6 +38,6 @@ export function ProductCard({ house }: { house: IHouse }) {
 				houseName={house.title}
 				prevImg={house.prevImg}
 			/>
-		</div>
+		</section>
 	)
 }
