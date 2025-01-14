@@ -19,6 +19,7 @@ export function ImageBlock({ imgUrl, className, alt }: IImageBlock) {
 				className={`object-cover relative z-20 ${!isLoading ? 'opacity-100' : 'opacity-0'} duration-500 transition-opacity ${className && className}`}
 				onLoad={() => setIsLoading(false)}
 				priority
+				loading="lazy"
 				src={imgUrl}
 				alt={alt}
 			/>

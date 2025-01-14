@@ -1,4 +1,5 @@
-import { HomeSections } from '@/components/home/home-sections/HomeSections'
+import { HomeInfoSection } from '@/components/home'
+import { ProductList } from '@/components/product-list/ProductsList'
 import { TitlePageInfo } from '@/components/title-page-info'
 import { ImageBlock } from '@/shared/ui'
 import houseOne from '../shared/images/house-one.png'
@@ -17,7 +18,8 @@ export function HomeScreen() {
 					alt="Посуточная аренда загородного дома в 50 км от МКАД."
 				/>
 			</TitlePageInfo>
-			<HomeSections />
+			<HomeInfoSection />
+			<ProductList />
 		</>
 	)
 }

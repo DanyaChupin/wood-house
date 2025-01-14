@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Header } from '@/components/header'
 import '../shared/styles/global.css'
@@ -20,7 +19,6 @@ export default function RootLayout({
 				<div className="px-[15px] lg:px-[25px] 2xl:px-[50px]">
 					{children}
 				</div>
-				<Analytics />
 			</body>
 		</html>
 	)

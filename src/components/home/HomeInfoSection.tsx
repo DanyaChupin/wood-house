@@ -1,15 +1,14 @@
 import { MessageWrapper } from '@/components/message-wrapper'
 import { ImageBlock } from '@/shared/ui'
-import houseElemFive from '../../../shared/images/house-one-elem-five.png'
-import houseElemFour from '../../../shared/images/house-one-elem-four.png'
-import houseElemOne from '../../../shared/images/house-one-elem-one.png'
-import houseElemSeven from '../../../shared/images/house-one-elem-seven.png'
-import houseElemSix from '../../../shared/images/house-one-elem-six.png'
-import houseElemThree from '../../../shared/images/house-one-elem-three.png'
-import houseElemTwo from '../../../shared/images/house-one-elem-two.png'
+import houseElemFive from '../../shared/images/house-one-elem-five.png'
+import houseElemFour from '../../shared/images/house-one-elem-four.png'
+import houseElemOne from '../../shared/images/house-one-elem-one.png'
+import houseElemSeven from '../../shared/images/house-one-elem-seven.png'
+import houseElemSix from '../../shared/images/house-one-elem-six.png'
+import houseElemThree from '../../shared/images/house-one-elem-three.png'
+import houseElemTwo from '../../shared/images/house-one-elem-two.png'
 
-//
-export function HomeSections() {
+export function HomeInfoSection() {
 	return (
 		<>
 			<MessageWrapper
@@ -55,7 +54,7 @@ export function HomeSections() {
 					</p>
 				</div>
 			</MessageWrapper>
-			<div className="flex flex-col gap-[16px] lg:gap-[22px] 2xl:gap-[30px] mb-[300px]">
+			<div className="flex flex-col gap-[16px] lg:gap-[22px] 2xl:gap-[30px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
 				<div className="flex w-[calc(100%+30px)] sm:w-full sm:ml-0 sm:flex-row-reverse ml-[-15px] overflow-x-scroll sm:overflow-x-visible gap-[12px] lg:gap-[16px] 2xl:gap-[20px] flex-nowrap scrollbar-hide">
 					<div className="hidden sm:block w-[45%] h-[368px] sm:h-[200px] md:h-full sm:max-h-[232px]">
 						<ImageBlock
