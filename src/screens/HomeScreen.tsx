@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { HomeInfoSection } from '@/components/home'
+import { HomeInfoSection, YandexInfo } from '@/components/home'
 import { TitlePageInfo } from '@/components/title-page-info'
 import { ImageBlock } from '@/shared/ui'
 import houseOne from '../shared/images/house-one.png'
@@ -27,6 +27,7 @@ export function HomeScreen() {
 			<HomeInfoSection />
 			<ProductList />
 			<ProsBlock />
+			<YandexInfo />
 		</>
 	)
 }
