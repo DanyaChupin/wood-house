@@ -24,9 +24,7 @@ const prosData = [
 export default function ProsBlock() {
 	const [currentSlide, setCurrentSlide] = useState(1)
 	useEffect(() => {
-		let interval: null | NodeJS.Timer = null
-
-		interval = setInterval(() => {
+		const interval = setInterval(() => {
 			setCurrentSlide((prev) => {
 				if (prev === 3) {
 					return 1
@@ -37,13 +35,13 @@ export default function ProsBlock() {
 		}, 7100)
 
 		return () => {
-			if (!interval) {
+			if (interval) {
 				clearInterval(interval)
 			}
 		}
 	}, [])
 	return (
-		<ul className="w-[calc(100%+30px)] md:w-full md:ml-0 ml-[-15px] ease-linear flex flex-nowrap overflow-hidden relative h-[200px] lg:h-[430px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
+		<ul className="w-[calc(100%+30px)] md:w-full md:ml-0 ml-[-15px] ease-linear flex flex-nowrap overflow-hidden relative h-[200px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
 			{prosData.map((info, index) => (
 				<ProsItem
 					key={info.title}

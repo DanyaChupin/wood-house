@@ -12,7 +12,10 @@ export function TitlePageInfo({
 }: ITitlePageInfo) {
 	return (
 		<>
-			<div className="flex flex-col gap-[25px] sm:gap-[30px] lg:gap-[40px] 2xl:gap-[50px] mb-[71px] sm:mb-[61px] lg:mb-[50px] sm:items-center">
+			<div
+				id="top"
+				className="flex flex-col gap-[25px] sm:gap-[30px] lg:gap-[40px] 2xl:gap-[50px] mb-[71px] sm:mb-[61px] lg:mb-[50px] sm:items-center"
+			>
 				<h1 className="text-[64px] sm:text-[82px] lg:text-[88px] 2xl:text-[96px]">
 					{title}
 				</h1>
