@@ -1,12 +1,14 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'
 import { IHouse } from '@/shared/types/type'
 import ProductDescription from './ui/ProductDescription'
 import { ProductInformation } from './ui/ProductInfomation'
-import { ProductSliderDesk } from './ui/ProductSlideDesk'
-import { ProductSliderMobile } from './ui/ProductSliderMobile'
 import ProductTitle from './ui/ProductTitle'
+
+const ProductSliderMobile = dynamic(() => import('./ui/ProductSliderMobile'))
+const ProductSliderDesk = dynamic(() => import('./ui/ProductSlideDesk'))
 
 export function ProductCard({ house }: { house: IHouse }) {
 	const { isMobile } = useBreakpoints()

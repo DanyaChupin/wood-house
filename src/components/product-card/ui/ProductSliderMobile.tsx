@@ -5,7 +5,10 @@ interface IProductSliderMobile {
 	imgUrls: StaticImageData[]
 	alt: string
 }
-export function ProductSliderMobile({ imgUrls, alt }: IProductSliderMobile) {
+export default function ProductSliderMobile({
+	imgUrls,
+	alt,
+}: IProductSliderMobile) {
 	return (
 		<div className="w-[calc(100%+30px)] scrollbar-hide ml-[-15px] flex gap-[16px]  mb-[16px] overflow-x-scroll">
 			{imgUrls.map((img) => (

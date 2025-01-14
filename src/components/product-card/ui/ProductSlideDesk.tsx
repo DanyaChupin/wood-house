@@ -10,7 +10,10 @@ interface IProductSliderDesk {
 	imgUrls: StaticImageData[]
 	alt: string
 }
-export function ProductSliderDesk({ imgUrls, alt }: IProductSliderDesk) {
+export default function ProductSliderDesk({
+	imgUrls,
+	alt,
+}: IProductSliderDesk) {
 	const slideRef = useRef<HTMLDivElement | null>(null)
 	const [isDisabled, setIsDisabled] = useState(false)
 	useEffect(() => {
@@ -30,7 +33,7 @@ export function ProductSliderDesk({ imgUrls, alt }: IProductSliderDesk) {
 		<div className="relative">
 			<div
 				ref={slideRef}
-				className="w-full flex overflow-hidden mb-[30px]"
+				className="w-full flex overflow-x-scroll mb-[30px]"
 			>
 				<ProductSliderDeskMap imgUrls={imgUrls} alt={alt} />
 			</div>
