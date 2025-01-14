@@ -21,7 +21,7 @@ const prosData = [
 	},
 ]
 
-export function ProsBlock() {
+export default function ProsBlock() {
 	const [currentSlide, setCurrentSlide] = useState(1)
 	useEffect(() => {
 		let interval: null | NodeJS.Timer = null

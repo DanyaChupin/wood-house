@@ -1,1 +1,0 @@
-export { ProsBlock } from './ProsBlock'
