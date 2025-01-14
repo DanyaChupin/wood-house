@@ -25,8 +25,36 @@ import blackHouseMobile10 from '../../shared/images/black-house-mobile-10.png'
 import blackHouseMobile11 from '../../shared/images/black-house-mobile-11.png'
 import blackHouseMobile12 from '../../shared/images/black-house-mobile-12.png'
 import blackHouseMobile13 from '../../shared/images/black-house-mobile-13.png'
-import blackHousePrevOne from '../../shared/images/black-house-prev-1.png'
-import blackHousePrevTwo from '../../shared/images/black-house-prev-2.png'
+import blackHousePrev1 from '../../shared/images/black-house-prev-1.png'
+import blackHousePrev2 from '../../shared/images/black-house-prev-2.png'
+import whiteHouseDesk1 from '../../shared/images/white-house-desk-1.png'
+import whiteHouseDesk2 from '../../shared/images/white-house-desk-2.png'
+import whiteHouseDesk3 from '../../shared/images/white-house-desk-3.png'
+import whiteHouseDesk4 from '../../shared/images/white-house-desk-4.png'
+import whiteHouseDesk5 from '../../shared/images/white-house-desk-5.png'
+import whiteHouseDesk6 from '../../shared/images/white-house-desk-6.png'
+import whiteHouseDesk7 from '../../shared/images/white-house-desk-7.png'
+import whiteHouseDesk8 from '../../shared/images/white-house-desk-8.png'
+import whiteHouseDesk9 from '../../shared/images/white-house-desk-9.png'
+import whiteHouseDesk10 from '../../shared/images/white-house-desk-10.png'
+import whiteHouseDesk11 from '../../shared/images/white-house-desk-11.png'
+import whiteHouseDesk12 from '../../shared/images/white-house-desk-12.png'
+import whiteHouseDesk13 from '../../shared/images/white-house-desk-13.png'
+import whiteHouseMobile1 from '../../shared/images/white-house-mobile-1.png'
+import whiteHouseMobile2 from '../../shared/images/white-house-mobile-2.png'
+import whiteHouseMobile3 from '../../shared/images/white-house-mobile-3.png'
+import whiteHouseMobile4 from '../../shared/images/white-house-mobile-4.png'
+import whiteHouseMobile5 from '../../shared/images/white-house-mobile-5.png'
+import whiteHouseMobile6 from '../../shared/images/white-house-mobile-6.png'
+import whiteHouseMobile7 from '../../shared/images/white-house-mobile-7.png'
+import whiteHouseMobile8 from '../../shared/images/white-house-mobile-8.png'
+import whiteHouseMobile9 from '../../shared/images/white-house-mobile-9.png'
+import whiteHouseMobile10 from '../../shared/images/white-house-mobile-10.png'
+import whiteHouseMobile11 from '../../shared/images/white-house-mobile-11.png'
+import whiteHouseMobile12 from '../../shared/images/white-house-mobile-12.png'
+import whiteHouseMobile13 from '../../shared/images/white-house-mobile-13.png'
+import whiteHousePrev1 from '../../shared/images/white-house-prev-1.png'
+import whiteHousePrev2 from '../../shared/images/white-house-prev-2.png'
 import { ProductCard } from '../product-card'
 
 const HOUSING: IHouse[] = [
@@ -65,7 +93,44 @@ const HOUSING: IHouse[] = [
 			blackHouseDesk12,
 			blackHouseDesk13,
 		],
-		prevImg: [blackHousePrevOne, blackHousePrevTwo],
+		prevImg: [blackHousePrev1, blackHousePrev2],
+	},
+	{
+		title: 'Светлый дом',
+		capacity: '2 - 4 гостя',
+		livingArea: `98.6м`,
+		terraceArea: '25м',
+		mainImgMobile: [
+			whiteHouseMobile1,
+			whiteHouseMobile2,
+			whiteHouseMobile3,
+			whiteHouseMobile4,
+			whiteHouseMobile5,
+			whiteHouseMobile6,
+			whiteHouseMobile7,
+			whiteHouseMobile8,
+			whiteHouseMobile9,
+			whiteHouseMobile10,
+			whiteHouseMobile11,
+			whiteHouseMobile12,
+			whiteHouseMobile13,
+		],
+		mainImgDesktop: [
+			whiteHouseDesk1,
+			whiteHouseDesk2,
+			whiteHouseDesk3,
+			whiteHouseDesk4,
+			whiteHouseDesk5,
+			whiteHouseDesk6,
+			whiteHouseDesk7,
+			whiteHouseDesk8,
+			whiteHouseDesk9,
+			whiteHouseDesk10,
+			whiteHouseDesk11,
+			whiteHouseDesk12,
+			whiteHouseDesk13,
+		],
+		prevImg: [whiteHousePrev1, whiteHousePrev2],
 	},
 ]
 export default function ProductList() {
