@@ -25,7 +25,7 @@ export function GoToNextButton({
 			}}
 			className="font-bold bg-black lg:hover:bg-GRAY_500 transition-[background-color] duration-200 flex gap-[8px] w-full items-center justify-center text-white font-[SFpro]"
 		>
-			ЗАБРОНИРОВАТЬ{children}
+			Забронировать{children}
 		</Link>
 	)
 }

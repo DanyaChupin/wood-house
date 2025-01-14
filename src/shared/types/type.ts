@@ -1,6 +1,11 @@
+import { StaticImageData } from 'next/image'
+
 export interface IHouse {
 	title: string
 	capacity: string
 	livingArea: string
 	terraceArea: string
+	mainImgMobile: StaticImageData[]
+	mainImgDesktop: StaticImageData[]
+	prevImg: StaticImageData[]
 }
