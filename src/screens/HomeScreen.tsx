@@ -1,9 +1,12 @@
+import dynamic from 'next/dynamic'
 import { HomeInfoSection } from '@/components/home'
-import { ProductList } from '@/components/product-list/ProductsList'
 import { TitlePageInfo } from '@/components/title-page-info'
 import { ImageBlock } from '@/shared/ui'
 import houseOne from '../shared/images/house-one.png'
 
+const ProductList = dynamic(
+	() => import('@/components/product-list/ProductsList')
+)
 export function HomeScreen() {
 	return (
 		<>

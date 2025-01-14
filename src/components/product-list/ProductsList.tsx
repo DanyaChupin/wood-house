@@ -12,8 +12,6 @@ import blackHouseDesk10 from '../../shared/images/black-house-desk-10.png'
 import blackHouseDesk11 from '../../shared/images/black-house-desk-11.png'
 import blackHouseDesk12 from '../../shared/images/black-house-desk-12.png'
 import blackHouseDesk13 from '../../shared/images/black-house-desk-13.png'
-import blackHousePrevOne from '../../shared/images/black-house-img-prev-one.png'
-import blackHousePrevTwo from '../../shared/images/black-house-img-prev-two.png'
 import blackHouseMobile1 from '../../shared/images/black-house-mobile-1.png'
 import blackHouseMobile2 from '../../shared/images/black-house-mobile-2.png'
 import blackHouseMobile3 from '../../shared/images/black-house-mobile-3.png'
@@ -27,6 +25,8 @@ import blackHouseMobile10 from '../../shared/images/black-house-mobile-10.png'
 import blackHouseMobile11 from '../../shared/images/black-house-mobile-11.png'
 import blackHouseMobile12 from '../../shared/images/black-house-mobile-12.png'
 import blackHouseMobile13 from '../../shared/images/black-house-mobile-13.png'
+import blackHousePrevOne from '../../shared/images/black-house-prev-1.png'
+import blackHousePrevTwo from '../../shared/images/black-house-prev-2.png'
 import { ProductCard } from '../product-card'
 
 const HOUSING: IHouse[] = [
@@ -68,7 +68,7 @@ const HOUSING: IHouse[] = [
 		prevImg: [blackHousePrevOne, blackHousePrevTwo],
 	},
 ]
-export function ProductList() {
+export default function ProductList() {
 	return (
 		<div>
 			{HOUSING.map((house) => (

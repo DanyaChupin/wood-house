@@ -38,6 +38,7 @@ export default {
 			},
 			colors: {
 				GRAY_500: '#4B4B4B',
+				GRAY_600: '#2f2f30',
 				GRAY_400: '#AEAEB2',
 			},
 		},

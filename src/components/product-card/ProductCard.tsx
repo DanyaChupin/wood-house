@@ -2,11 +2,11 @@
 
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'
 import { IHouse } from '@/shared/types/type'
-import { ProductDescription } from './ui/ProductDescription'
+import ProductDescription from './ui/ProductDescription'
 import { ProductInformation } from './ui/ProductInfomation'
-import { ProductSlideDesk } from './ui/ProductSlideDesk'
+import { ProductSliderDesk } from './ui/ProductSlideDesk'
 import { ProductSliderMobile } from './ui/ProductSliderMobile'
-import { ProductTitle } from './ui/ProductTitle'
+import ProductTitle from './ui/ProductTitle'
 
 export function ProductCard({ house }: { house: IHouse }) {
 	const { isMobile } = useBreakpoints()
@@ -26,7 +26,7 @@ export function ProductCard({ house }: { house: IHouse }) {
 					alt={house.title}
 				/>
 			) : (
-				<ProductSlideDesk
+				<ProductSliderDesk
 					imgUrls={house.mainImgDesktop}
 					alt={house.title}
 				/>

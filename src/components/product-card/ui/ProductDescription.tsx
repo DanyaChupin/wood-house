@@ -1,7 +1,8 @@
+import { memo } from 'react'
 import { IHouse } from '@/shared/types/type'
 
 type LivingTerraceType = Pick<IHouse, 'livingArea' | 'terraceArea' | 'capacity'>
-export function ProductDescription({
+function ProductDescription({
 	livingArea,
 	terraceArea,
 	capacity,
@@ -29,3 +30,4 @@ export function ProductDescription({
 		</div>
 	)
 }
+export default memo(ProductDescription)
