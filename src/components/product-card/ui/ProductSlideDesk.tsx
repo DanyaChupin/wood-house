@@ -33,7 +33,7 @@ export default function ProductSliderDesk({
 		<div className="relative">
 			<div
 				ref={slideRef}
-				className="w-full flex overflow-hidden mb-[30px]"
+				className="w-full flex snap-mandatory snap-x scrollbar-hide overflow-x-scroll mb-[30px]"
 			>
 				<ProductSliderDeskMap imgUrls={imgUrls} alt={alt} />
 			</div>

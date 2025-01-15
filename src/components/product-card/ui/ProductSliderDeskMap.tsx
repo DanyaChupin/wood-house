@@ -12,7 +12,7 @@ function ProductSliderDeskMap({
 	return (
 		<>
 			{imgUrls.map((img) => (
-				<div className="shrink-0 w-full" key={img.src}>
+				<div className="shrink-0 snap-center w-full" key={img.src}>
 					<ImageBlock
 						className="h-full shrink-0 w-full"
 						imgUrl={img}
