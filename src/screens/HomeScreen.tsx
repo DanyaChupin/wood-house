@@ -19,7 +19,7 @@ export function HomeScreen() {
 	return (
 		<main
 			id="sliderScreen"
-			className="transition-[transform, opacity] close duration-700"
+			className="transition-[transform, opacity] closeLeft duration-700"
 		>
 			<TitlePageInfo
 				title="Вудхаус"
@@ -28,6 +28,7 @@ export function HomeScreen() {
 			>
 				<ImageBlock
 					imgUrl={houseOne}
+					id="sliderImage"
 					className="w-full h-[511px] 2xl:h-[604px] mb-[150px] lg:mb-[200px] 2xl:mb-[268px]"
 					alt="Посуточная аренда загородного дома в 50 км от МКАД."
 				/>

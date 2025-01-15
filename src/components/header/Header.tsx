@@ -5,39 +5,76 @@ import dynamic from 'next/dynamic'
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'
-import { CompanyLogo } from '@/shared/ui'
+import CompanyLogo from '@/shared/ui/Company-logo'
 import { GoToNextButton } from '@/shared/ui/GoToNextButton'
 import { BurgerButton } from './ui/Burger-button'
 
 const NavMenu = dynamic(() => import('./ui/Nav-menu'))
+
+let timesAnimLock: null | NodeJS.Timeout = null
 export function Header() {
 	const [isOpen, setIsOpen] = useState(false)
 	const { isMobile } = useBreakpoints()
 	const pathName = usePathname()
 	const { push } = useRouter()
+
+	const [isTimeDisabled, setIsTimeDisabled] = useState(false)
 	useEffect(() => {
 		const newScreen = document.querySelector('#sliderScreen')
 		if (newScreen) {
 			newScreen.classList.add('open') // Добавляем класс при открытии
-			newScreen.classList.remove('close') // Добавляем класс при открытии
+			newScreen.classList.remove('closeLeft') // Добавляем класс при открытии
 		}
 	}, [pathName])
 	const toggleBurgerMenu = (newPath?: string) => {
 		setIsOpen(!isOpen)
 		if (typeof newPath === 'string') {
-			if (newPath === pathName) return
+			if (newPath === pathName) {
+				if (isMobile) return
+				const currentTitle = document.querySelector('#sliderTitle')
+				const currentDescription =
+					document.querySelector('#sliderDescription')
+				const currentImage = document.querySelector('#sliderImage')
+				if (
+					currentTitle &&
+					currentDescription &&
+					currentImage &&
+					!isTimeDisabled
+				) {
+					currentTitle.classList.add('translateUpHigh')
+					currentImage.classList.add('translateUpLow')
+					currentDescription.classList.add('translateUpMedium')
+					if (timesAnimLock) {
+						clearTimeout(timesAnimLock)
+					}
+					setIsTimeDisabled(true)
+					timesAnimLock = setTimeout(() => {
+						currentTitle.classList.remove('translateUpHigh')
+						currentImage.classList.remove('translateUpLow')
+						currentDescription.classList.remove(
+							'translateUpMedium'
+						)
+						setIsTimeDisabled(false)
+					}, 1400)
+				}
+				return
+			}
 			const currentScreen = document.querySelector('#sliderScreen')
 			if (currentScreen) {
 				currentScreen.classList.remove('open') // Убираем класс при закрытии
-				currentScreen.classList.add('closeLeft') // Убираем класс при закрытии
+				if (newPath !== '/') {
+					currentScreen.classList.add('closeLeft') // Убираем класс при закрытии
+				} else {
+					currentScreen.classList.add('close') // Убираем класс при закрытии
+				}
 				setTimeout(() => {
 					push(newPath)
-				}, 150)
+				}, 300)
 			}
 		}
 	}
 	return (
-		<header className="h-[64px] sm:h-[68px] lg:h-[74px] 2xl:h-[80px] flex items-center relative mb-[70px] lg:mb-[111px] animate-translateXTop ease-out transition-[transform, opacity]">
+		<header className="h-[64px] sm:h-[68px] lg:h-[74px] 2xl:h-[80px] flex items-center relative mb-[70px] lg:mb-[111px] md:animate-translateXTop md:ease-out md:transition-[transform, opacity]">
 			<div className="flex items-center justify-between w-full px-[15px] lg:px-[25px] 2xl:px-[50px] overflow-x-hidden">
 				<CompanyLogo />
 				{!isMobile && <NavMenu onClick={toggleBurgerMenu} />}

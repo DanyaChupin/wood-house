@@ -20,7 +20,6 @@ export default function RootLayout({
 				<Header />
 				<div className="px-[15px] lg:px-[25px] 2xl:px-[50px]">
 					{children}
-
 					<Footer />
 				</div>
 			</body>
