@@ -68,7 +68,6 @@ span {
 	filter: blur(0.5px);
 }
 .open {
-	transform: translate(0%, 0%);
 	opacity: 1;
 	filter: blur(0px);
 }
