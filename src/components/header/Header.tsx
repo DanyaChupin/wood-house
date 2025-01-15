@@ -10,16 +10,15 @@ import { BurgerButton } from './ui/Burger-button'
 const NavMenu = dynamic(() => import('./ui/Nav-menu'))
 export function Header() {
 	const [isOpen, setIsOpen] = useState(false)
-	const { isMobile, isDesktop, isLaptop } = useBreakpoints()
+	const { isMobile } = useBreakpoints()
 	const toggleBurgerMenu = () => {
 		setIsOpen(!isOpen)
 	}
-	// Нужены размеры экрана в js
 	return (
 		<header className="h-[64px] sm:h-[68px] lg:h-[74px] 2xl:h-[80px] flex items-center relative mb-[70px] lg:mb-[111px]">
 			<div className="flex items-center justify-between w-full px-[15px] lg:px-[25px] 2xl:px-[50px] overflow-x-hidden">
 				<CompanyLogo />
-				{(isLaptop || isDesktop) && <NavMenu />}
+				{!isMobile && <NavMenu />}
 				<div className="hidden lg:block w-[163px]">
 					<GoToNextButton
 						nextUrl="/bron"
