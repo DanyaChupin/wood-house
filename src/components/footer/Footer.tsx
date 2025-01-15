@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 import { SocialLinks } from './ui/SocialLinks'
 
 const YandexCart = dynamic(() => import('./ui/YandexCart'))
-export function Footer() {
+export default function Footer() {
 	return (
 		<footer className="mb-[100px]">
 			<h5 className="text-[32px] leading-[40px] 2xl:text-[48px] lg:text-[36px] lg:leading-[48px] flex w-full justify-center 2xl:leading-[56px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
