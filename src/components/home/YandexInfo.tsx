@@ -4,7 +4,7 @@ import { ArrowIcon } from '@/shared/icons/Arrow-icon'
 
 export function YandexInfo() {
 	const moveToTop = () => {
-		const section = document.querySelector(`#top`)
+		const section = document.querySelector(`#yandex-map`)
 		if (section)
 			section.scrollIntoView({
 				behavior: 'smooth',
@@ -12,12 +12,13 @@ export function YandexInfo() {
 			})
 	}
 	return (
-		<div className="flex flex-col mb-[37px] lg:mb-[43px] 2xl:mb-[50px] items-start ml-[10%] sm:ml-[18%] gap-[30px] lg:gap-[23px] 2xl:gap-[15px]">
-			<h4 className="text-[32px] lg:text-[40px] leading-[40px] lg:leading-[56px] 2xl:text-[48px]">
+		<div className="flex flex-col mb-[37px] lg:mb-[43px] 2xl:mb-[50px] items-start ml-[10%] sm:ml-[18%] lg:ml-[21%] gap-[30px] lg:gap-[23px] 2xl:gap-[15px]">
+			<h4 className="text-[32px] lg:text-[40px] leading-[40px] 2xl:leading-[56px] 2xl:text-[48px]">
 				Наши гости деляться
-				<br /> своими эмоциями
 				<br />
-				 на Яндекс Картах.
+				своими эмоциями
+				<br />
+				на Яндекс Картах.
 				<br />
 				Поделитесь и вы
 			</h4>

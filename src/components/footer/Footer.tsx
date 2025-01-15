@@ -1,0 +1,48 @@
+import dynamic from 'next/dynamic'
+import { SocialLinks } from './ui/SocialLinks'
+
+const YandexCart = dynamic(() => import('./ui/YandexCart'))
+export function Footer() {
+	return (
+		<footer className="mb-[100px]">
+			<h5 className="text-[32px] leading-[40px] 2xl:text-[48px] lg:text-[36px] lg:leading-[48px] flex w-full justify-center 2xl:leading-[56px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
+				Это тихое место идеально <br /> подходит для тех, кто ищет
+				<br /> гармонию с природой и<br /> уединение от городской
+				суеты
+			</h5>
+			<div className="flex flex-col lg:flex-row gap-[30px] 2xl:gap-[70px]">
+				<div className="lg:w-[60%] xl:w-[50%]">
+					<div className="flex flex-col mb-[30px]">
+						<p className="font-bold text-[32px] mb-[24px] lg:mb-[54px] 2xl:mb-[74px] leading-[40px] 2xl:text-[48px] lg:text-[36px] lg:leading-[48px]">
+							Если все еще <br /> остались вопросы
+						</p>
+						<p className="font-semibold text-[20px] leading-[28px]">
+							Московская область, городской <br /> округ
+							Истра, деревня Лукино, 24а <br />
+							<span className="text-GRAY_400 mt-[6px] text-[16px]">
+								Адрес
+							</span>
+						</p>
+					</div>
+					<div className="flex flex-col gap-[24px] mb-[30px]">
+						<p className="font-semibold text-[20px] leading-[28px]">
+							<a href="tel:+7 (977) 777-73-32">
+								+7 (977) 777-73-32
+							</a>
+							<br />
+							<a href="mailto:vudxauc@gmail.com">
+								vudxauc@gmail.com
+							</a>
+							<br />
+							<span className="text-GRAY_400 mt-[6px] text-[16px]">
+								Контакты
+							</span>
+						</p>
+					</div>
+					<SocialLinks />
+				</div>
+				<YandexCart />
+			</div>
+		</footer>
+	)
+}
