@@ -10,7 +10,8 @@ export default {
 	theme: {
 		extend: {
 			animation: {
-				fadeIn: '0.5s fadeIn forwards',
+				fadeIn: '5s fadeIn forwards',
+				translateXTop: '0.9s translateXTop forwards',
 				slideRightSmoke: '8s slideRightSmoke forwards',
 			},
 			transitionProperty: {
@@ -55,6 +56,19 @@ export default {
 					'100%': {
 						transform: 'translateX(50%)',
 						filter: 'blur(3px)',
+					},
+				},
+				translateXTop: {
+					'0%': {
+						transform: 'translateY(-100%)',
+						opacity: '0',
+					},
+					'50%': {
+						opacity: '0',
+					},
+					'100%': {
+						transform: 'translateY(0%)',
+						opacity: '1',
 					},
 				},
 				fadeIn: {

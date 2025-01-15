@@ -58,3 +58,19 @@ span {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
+
+.close {
+	transform: translate(150%, 0%);
+	opacity: 0;
+	filter: blur(3px);
+}
+.closeLeft {
+	transform: translate(-150%, 0%);
+	opacity: 0;
+	filter: blur(3px);
+}
+.open {
+	transform: translate(0%, 0%);
+	opacity: 1;
+	filter: blur(0px);
+}

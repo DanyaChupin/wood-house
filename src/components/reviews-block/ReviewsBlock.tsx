@@ -15,7 +15,7 @@ export default function ReviewsBlock() {
 					<ImageBlock
 						imgUrl={reviewsImg1}
 						className="w-full h-[371px]"
-						alt="one"
+						alt="WoodHouse отзыв"
 					/>
 					<div className="flex gap-[9px] items-center">
 						<div className="bg-[#4A9FFF] text-white flex justify-center items-center rounded-[50%] w-[33px] h-[33px]">
@@ -35,12 +35,12 @@ export default function ReviewsBlock() {
 					<ImageBlock
 						imgUrl={reviewsImg2}
 						className="w-full h-[200px]"
-						alt="one"
+						alt="WoodHouse отзыв"
 					/>
 					<ImageBlock
 						imgUrl={reviewsImg3}
 						className="w-full h-[326px]"
-						alt="one"
+						alt="WoodHouse отзыв"
 					/>
 				</div>
 				<div className="flex flex-col w-full max-w-[312px]">
@@ -48,7 +48,7 @@ export default function ReviewsBlock() {
 						<ImageBlock
 							imgUrl={reviewsImg4}
 							className="w-full h-[200px]"
-							alt="one"
+							alt="WoodHouse отзыв"
 						/>
 						<div className="flex gap-[9px] items-center">
 							<div className="w-[33px] h-[33px]">
@@ -70,7 +70,7 @@ export default function ReviewsBlock() {
 						<ImageBlock
 							imgUrl={reviewsImg5}
 							className="w-full h-[326px]"
-							alt="one"
+							alt="WoodHouse отзыв"
 						/>
 						<div className="flex gap-[9px] items-center">
 							<div className="bg-[#FFAB4A] text-white flex justify-center items-center rounded-[50%] w-[33px] h-[33px]">
@@ -89,7 +89,7 @@ export default function ReviewsBlock() {
 					<ImageBlock
 						imgUrl={reviewsImg6}
 						className="w-full h-[326px]"
-						alt="one"
+						alt="WoodHouse отзыв"
 					/>
 					<div className="flex gap-[9px] items-center">
 						<div className="bg-[#FFAB4A] text-white flex justify-center items-center rounded-[50%] w-[33px] h-[33px]">
