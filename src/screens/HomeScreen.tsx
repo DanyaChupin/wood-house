@@ -17,7 +17,10 @@ const ProductList = dynamic(
 
 export function HomeScreen() {
 	return (
-		<>
+		<main
+			id="sliderScreen"
+			className="transition-[transform, opacity] close duration-700"
+		>
 			<TitlePageInfo
 				title="Вудхаус"
 				description="Посуточная аренда загородного дома в 50 км от МКАД.
@@ -34,6 +37,6 @@ export function HomeScreen() {
 			<ProsBlock />
 			<YandexInfo />
 			<ReviewsBlock />
-		</>
+		</main>
 	)
 }

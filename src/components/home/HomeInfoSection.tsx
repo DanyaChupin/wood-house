@@ -19,12 +19,12 @@ export default function HomeInfoSection() {
 					<ImageBlock
 						imgUrl={houseElem1}
 						className="w-full h-full min-h-[226px] sm:max-h-[250px] lg:max-h-full xl:min-h-[360px] 2xl:min-h-[460px]"
-						alt="Посуточная аренда загородного дома в 50 км от МКАД."
+						alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 					/>
 					<ImageBlock
 						imgUrl={houseElem2}
 						className="w-full h-full min-h-[226px] sm:max-h-[250px] lg:max-h-full xl:min-h-[360px] 2xl:min-h-[460px]"
-						alt="Посуточная аренда загородного дома в 50 км от МКАД."
+						alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 					/>
 				</div>
 			</MessageWrapper>
@@ -36,14 +36,14 @@ export default function HomeInfoSection() {
 							<ImageBlock
 								imgUrl={houseElem3}
 								className="w-full max-h-[368px] xs:max-h-[430px] sm:max-h-[250px] lg:max-h-full sm:min-h-auto xl:min-h-[360px] 2xl:min-h-[469px]"
-								alt="Посуточная аренда загородного дома в 50 км от МКАД."
+								alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 							/>
 						</div>
 						<div className="w-[calc(85%+15px)] snap-center shrink-0 md:shrink pr-[15px] sm:pr-0 sm:w-full">
 							<ImageBlock
 								imgUrl={houseElem4}
 								className="w-full max-h-[368px] xs:max-h-[430px] sm:max-h-[250px] lg:max-h-full sm:min-h-auto xl:min-h-[360px] 2xl:min-h-[469px]"
-								alt="Посуточная аренда загородного дома в 50 км от МКАД."
+								alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 							/>
 						</div>
 					</div>
@@ -60,21 +60,21 @@ export default function HomeInfoSection() {
 						<ImageBlock
 							imgUrl={houseElem7}
 							className="w-full h-full"
-							alt="Посуточная аренда загородного дома в 50 км от МКАД."
+							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 						/>
 					</div>
 					<div className="w-[85%] shrink-0 snap-center ml-[15px] sm:ml-0 sm:w-full sm:shrink h-[368px]">
 						<ImageBlock
 							imgUrl={houseElem5}
 							className="w-full h-[368px] sm:min-h-full"
-							alt="Посуточная аренда загородного дома в 50 км от МКАД."
+							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 						/>
 					</div>
 					<div className="w-[85%] shrink-0 snap-center pr-[15px] sm:w-[45%] sm:pr-0 sm:shrink h-[368px] self-end sm:h-fit md:h-full sm:mb-[-30px] sm:max-h-[232px]">
 						<ImageBlock
 							imgUrl={houseElem6}
 							className="w-full h-[368px] sm:h-full"
-							alt="Посуточная аренда загородного дома в 50 км от МКАД."
+							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 						/>
 					</div>
 				</div>

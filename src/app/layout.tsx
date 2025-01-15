@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="ru">
-			<body className="antialiased animate-fadeIn">
+			<body className="antialiased">
 				<Header />
 				<div className="px-[15px] lg:px-[25px] 2xl:px-[50px]">
 					{children}

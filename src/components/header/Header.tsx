@@ -1,7 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
+import { usePathname } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'
 import { CompanyLogo } from '@/shared/ui'
 import { GoToNextButton } from '@/shared/ui/GoToNextButton'
@@ -11,15 +13,35 @@ const NavMenu = dynamic(() => import('./ui/Nav-menu'))
 export function Header() {
 	const [isOpen, setIsOpen] = useState(false)
 	const { isMobile } = useBreakpoints()
-	const toggleBurgerMenu = () => {
+	const pathName = usePathname()
+	const { push } = useRouter()
+	useEffect(() => {
+		const newScreen = document.querySelector('#sliderScreen')
+		if (newScreen) {
+			newScreen.classList.add('open') // Добавляем класс при открытии
+			newScreen.classList.remove('close') // Добавляем класс при открытии
+		}
+	}, [pathName])
+	const toggleBurgerMenu = (newPath?: string) => {
 		setIsOpen(!isOpen)
+		if (typeof newPath === 'string') {
+			if (newPath === pathName) return
+			const currentScreen = document.querySelector('#sliderScreen')
+			if (currentScreen) {
+				currentScreen.classList.remove('open') // Убираем класс при закрытии
+				currentScreen.classList.add('closeLeft') // Убираем класс при закрытии
+				setTimeout(() => {
+					push(newPath)
+				}, 150)
+			}
+		}
 	}
 	return (
-		<header className="h-[64px] sm:h-[68px] lg:h-[74px] 2xl:h-[80px] flex items-center relative mb-[70px] lg:mb-[111px]">
+		<header className="h-[64px] sm:h-[68px] lg:h-[74px] 2xl:h-[80px] flex items-center relative mb-[70px] lg:mb-[111px] animate-translateXTop ease-out transition-[transform, opacity]">
 			<div className="flex items-center justify-between w-full px-[15px] lg:px-[25px] 2xl:px-[50px] overflow-x-hidden">
 				<CompanyLogo />
-				{!isMobile && <NavMenu />}
-				<div className="hidden lg:block w-[163px]">
+				{!isMobile && <NavMenu onClick={toggleBurgerMenu} />}
+				<div className="hidden md:block tracking-[1px] w-[200px]">
 					<GoToNextButton
 						nextUrl="/bron"
 						borderRadius="14px"
@@ -32,9 +54,23 @@ export function Header() {
 					isOpen={isOpen}
 				/>
 			</div>
-			{isMobile && isOpen && (
-				<div className="h-[calc(100vh-64px)] z-50 absolute w-full bg-red-50 px-[15px] top-[64px] animate-fadeIn ">
-					Menu mobile
+			{isMobile && (
+				<div
+					className={`z-50 absolute w-full bg-white px-[15px] top-[64px] grid duration-[400ms] transition-[grid, opacity] ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
+				>
+					<div
+						className={`min-h-0 overflow-y-hidden ${isOpen ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200`}
+					>
+						<div className="h-[calc(100vh-64px)] pb-[100px] flex justify-between flex-col">
+							<NavMenu onClick={toggleBurgerMenu} />
+							<GoToNextButton
+								padding="14px 0px"
+								borderRadius="16px"
+								fontSize="14px"
+								nextUrl="/bron"
+							/>
+						</div>
+					</div>
 				</div>
 			)}
 		</header>
