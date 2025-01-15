@@ -8,7 +8,7 @@ import houseElem5 from '../../shared/images/house-one-elem-5.png'
 import houseElem6 from '../../shared/images/house-one-elem-6.png'
 import houseElem7 from '../../shared/images/house-one-elem-7.png'
 
-export function HomeInfoSection() {
+export default function HomeInfoSection() {
 	return (
 		<section>
 			<MessageWrapper
