@@ -15,6 +15,7 @@ export function SpaScreen() {
 			>
 				<ImageBlock
 					imgUrl={houseOne}
+					id="sliderImage"
 					className="w-full h-[511px] 2xl:h-[604px] mb-[150px] lg:mb-[200px] 2xl:mb-[268px]"
 					alt="Посуточная аренда загородного дома в 50 км от МКАД."
 				/>
