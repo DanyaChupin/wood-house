@@ -23,7 +23,7 @@ export function Header() {
 		const newScreen = document.querySelector('#sliderScreen')
 		if (newScreen) {
 			newScreen.classList.add('open') // Добавляем класс при открытии
-			newScreen.classList.remove('closeLeft') // Добавляем класс при открытии
+			newScreen.classList.remove('close') // Добавляем класс при открытии
 		}
 	}, [pathName])
 	const toggleBurgerMenu = (newPath?: string) => {
@@ -62,11 +62,7 @@ export function Header() {
 			const currentScreen = document.querySelector('#sliderScreen')
 			if (currentScreen) {
 				currentScreen.classList.remove('open') // Убираем класс при закрытии
-				if (newPath !== '/') {
-					currentScreen.classList.add('closeLeft') // Убираем класс при закрытии
-				} else {
-					currentScreen.classList.add('close') // Убираем класс при закрытии
-				}
+				currentScreen.classList.add('close') // Убираем класс при закрытии
 				setTimeout(() => {
 					push(newPath)
 				}, 300)
