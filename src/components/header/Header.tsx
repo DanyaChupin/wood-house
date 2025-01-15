@@ -28,6 +28,13 @@ export function Header() {
 	}, [pathName])
 	const toggleBurgerMenu = (newPath?: string) => {
 		setIsOpen(!isOpen)
+		if (document) {
+			if (!isOpen) {
+				document.body.style.overflow = 'hidden'
+			} else {
+				document.body.style.overflow = 'visible'
+			}
+		}
 		if (typeof newPath === 'string') {
 			if (newPath === pathName) {
 				if (isMobile) return
