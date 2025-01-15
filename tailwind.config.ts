@@ -11,7 +11,7 @@ export default {
 		extend: {
 			animation: {
 				fadeIn: '5s fadeIn forwards',
-				translateXTop: '0.9s translateXTop forwards',
+				fadeInBlur: '0.2s fadeInBlur forwards',
 				slideRightSmoke: '8s slideRightSmoke forwards',
 			},
 			transitionProperty: {
@@ -58,18 +58,15 @@ export default {
 						filter: 'blur(3px)',
 					},
 				},
-				translateXTop: {
+				fadeInBlur: {
 					'0%': {
-						transform: 'translateY(-100%)',
 						opacity: '0',
+						filter: 'blur(0.5px)',
 					},
-					'50%': {
-						opacity: '0',
-					},
-					'100%': {
-						transform: 'translateY(0%)',
 
+					'100%': {
 						opacity: '1',
+						filter: 'blur(0px)',
 					},
 				},
 				fadeIn: {

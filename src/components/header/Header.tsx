@@ -26,15 +26,18 @@ export function Header() {
 			newScreen.classList.remove('close') // Добавляем класс при открытии
 		}
 	}, [pathName])
-	const toggleBurgerMenu = (newPath?: string) => {
-		setIsOpen(!isOpen)
+	useEffect(() => {
 		if (document) {
-			if (!isOpen) {
+			if (isOpen) {
 				document.body.style.overflow = 'hidden'
 			} else {
 				document.body.style.overflow = 'visible'
 			}
 		}
+	}, [isOpen])
+	const toggleBurgerMenu = (newPath?: string) => {
+		setIsOpen(!isOpen)
+
 		if (typeof newPath === 'string') {
 			if (newPath === pathName) {
 				if (isMobile) return
@@ -77,7 +80,7 @@ export function Header() {
 		}
 	}
 	return (
-		<header className="h-[64px] sm:h-[68px] lg:h-[74px] 2xl:h-[80px] flex items-center relative mb-[70px] lg:mb-[111px] md:animate-translateXTop md:ease-out md:transition-[transform, opacity]">
+		<header className="h-[64px] sm:h-[68px] lg:h-[74px] 2xl:h-[80px] flex items-center relative mb-[70px] lg:mb-[111px] md:animate-fadeInBlur md:transition-opcaity">
 			<div className="flex items-center justify-between w-full px-[15px] lg:px-[25px] 2xl:px-[50px] overflow-x-hidden">
 				<CompanyLogo />
 				{!isMobile && <NavMenu onClick={toggleBurgerMenu} />}
