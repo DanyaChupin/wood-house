@@ -66,14 +66,14 @@ export function HomeInfoSection() {
 					<div className="w-[85%] shrink-0 snap-center ml-[15px] sm:ml-0 sm:w-full sm:shrink h-[368px]">
 						<ImageBlock
 							imgUrl={houseElem5}
-							className="w-full h-full"
+							className="w-full h-[368px] sm:min-h-full"
 							alt="Посуточная аренда загородного дома в 50 км от МКАД."
 						/>
 					</div>
-					<div className="w-[85%] shrink-0 snap-center pr-[15px] sm:w-[45%] sm:pr-0 sm:shrink h-[368px] self-end sm:h-[200px] md:h-full sm:mb-[-30px] sm:max-h-[232px]">
+					<div className="w-[85%] shrink-0 snap-center pr-[15px] sm:w-[45%] sm:pr-0 sm:shrink h-[368px] self-end sm:h-fit md:h-full sm:mb-[-30px] sm:max-h-[232px]">
 						<ImageBlock
 							imgUrl={houseElem6}
-							className="w-full h-full"
+							className="w-full h-[368px] sm:h-full"
 							alt="Посуточная аренда загородного дома в 50 км от МКАД."
 						/>
 					</div>

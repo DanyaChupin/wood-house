@@ -11,7 +11,7 @@ interface IImageBlock {
 export function ImageBlock({ imgUrl, className, alt }: IImageBlock) {
 	const [isLoading, setIsLoading] = useState(true)
 	return (
-		<div className="relative w-full h-full">
+		<div className="relative w-full h-fit">
 			<div
 				className={`${isLoading ? 'animate-pulse' : 'opacity-100'} z-10 absolute transition-opacity bg-gray-200 ${className && className}`}
 			/>
