@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { HomeInfoSection, YandexInfo } from '@/components/home'
+import { YandexInfo } from '@/components/home'
 import { TitlePageInfo } from '@/components/title-page-info'
 import { ImageBlock } from '@/shared/ui'
 import houseOne from '../shared/images/house-one.png'
@@ -8,7 +8,9 @@ const ProsBlock = dynamic(() => import('@/components/pros-block/ProsBlock'))
 const ReviewsBlock = dynamic(
 	() => import('@/components/reviews-block/ReviewsBlock')
 )
-
+const HomeInfoSection = dynamic(
+	() => import('@/components/home/HomeInfoSection')
+)
 const ProductList = dynamic(
 	() => import('@/components/product-list/ProductsList')
 )

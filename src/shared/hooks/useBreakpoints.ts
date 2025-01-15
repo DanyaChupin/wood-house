@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from 'react'
 
-const DESKTOP = 1590 // 1160
+const DESKTOP = 1440 // 1160
 const TABLET = 1280 // 770
 const MOBILE = 768 // 375
-const LAPTOP = 1536
+const LAPTOP = 1440
 
 export function useBreakpoints() {
 	const width = useWindowSize()

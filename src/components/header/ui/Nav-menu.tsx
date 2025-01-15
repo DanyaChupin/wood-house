@@ -22,7 +22,7 @@ const ROUTES = [
 		routes: '/404',
 	},
 ]
-export function NavMenu() {
+export default function NavMenu() {
 	return (
 		<nav className="flex items-center gap-[32px]">
 			{ROUTES.map((routs) => (
