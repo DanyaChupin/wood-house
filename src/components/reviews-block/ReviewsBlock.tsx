@@ -7,10 +7,10 @@ import reviewsImg4 from '../../shared/images/reviews-4.png'
 import reviewsImg5 from '../../shared/images/reviews-5.png'
 import reviewsImg6 from '../../shared/images/reviews-6.png'
 
-export function ReviewsBlock() {
+export default function ReviewsBlock() {
 	return (
 		<div className="overflow-x-scroll lg:overflow-x-hidden scrollbar-hide flex w-[calc(100%+30px)] lg:w-full ml-[-15px] lg:ml-0 mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
-			<div className="w-full ml-[15px] lg:ml-[30px] 2xl:ml-0 flex lg:justify-between gap-x-[20px]">
+			<div className="w-full ml-[15px] lg:ml-[30px] 2xl:ml-0 flex justify-between gap-x-[20px]">
 				<div className="flex w-full max-w-[312px] shrink-0 lg:shrink flex-col gap-[20px]">
 					<ImageBlock
 						imgUrl={reviewsImg1}

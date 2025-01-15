@@ -13,7 +13,7 @@ export default function ProductSliderMobile({
 		<div className="w-[calc(100%+30px)] snap-mandatory snap-x scrollbar-hide ml-[-15px] flex gap-[16px]  mb-[16px] overflow-x-scroll">
 			{imgUrls.map((img) => (
 				<div
-					className="shrink-0 snap-center first:ml-[15px] last:pr-[15px] w-[90%]"
+					className="shrink-0 snap-center first:ml-[15px] last:mr-[15px] w-[90%]"
 					key={img.src}
 				>
 					<ImageBlock
