@@ -26,15 +26,18 @@ export function Header() {
 			newScreen.classList.remove('close') // Добавляем класс при открытии
 		}
 	}, [pathName])
-	const toggleBurgerMenu = (newPath?: string) => {
-		setIsOpen(!isOpen)
+	useEffect(() => {
 		if (document) {
-			if (!isOpen) {
+			if (isOpen) {
 				document.body.style.overflow = 'hidden'
 			} else {
 				document.body.style.overflow = 'visible'
 			}
 		}
+	}, [isOpen])
+	const toggleBurgerMenu = (newPath?: string) => {
+		setIsOpen(!isOpen)
+
 		if (typeof newPath === 'string') {
 			if (newPath === pathName) {
 				if (isMobile) return
