@@ -19,7 +19,7 @@ export function HomeScreen() {
 	return (
 		<main
 			id="sliderScreen"
-			className="transition-[transform, opacity] closeLeft duration-700"
+			className="transition-[transform, opacity] closeLeft duration-200"
 		>
 			<TitlePageInfo
 				title="Вудхаус"

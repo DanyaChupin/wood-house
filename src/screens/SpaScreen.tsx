@@ -6,7 +6,7 @@ export function SpaScreen() {
 	return (
 		<main
 			id="sliderScreen"
-			className="transition-[transform, opacity] close duration-700"
+			className="transition-[transform, opacity] close duration-200"
 		>
 			<TitlePageInfo
 				title="Отдохнуть душой и телом"

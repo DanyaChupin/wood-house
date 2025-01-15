@@ -45,7 +45,7 @@ function CompanyLogo() {
 			currentScreen.classList.add('close') // Убираем класс при закрытии
 			setTimeout(() => {
 				push('/')
-			}, 300)
+			}, 200)
 		}
 	}
 	return (
