@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 import { SocialLinks } from './ui/SocialLinks'
 
 const YandexCart = dynamic(() => import('./ui/YandexCart'))
@@ -26,13 +27,19 @@ export default function Footer() {
 					</div>
 					<div className="flex flex-col gap-[24px] mb-[30px]">
 						<p className="font-semibold text-[20px] leading-[28px]">
-							<a href="tel:+7 (977) 777-73-32">
+							<Link
+								aria-label="Номер телефона WoodHouse"
+								href="tel:+7 (977) 777-73-32"
+							>
 								+7 (977) 777-73-32
-							</a>
+							</Link>
 							<br />
-							<a href="mailto:vudxauc@gmail.com">
+							<Link
+								aria-label="email WoodHouse"
+								href="mailto:vudxauc@gmail.com"
+							>
 								vudxauc@gmail.com
-							</a>
+							</Link>
 							<br />
 							<span className="text-GRAY_400 mt-[6px] text-[16px]">
 								Контакты
