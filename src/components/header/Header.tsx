@@ -35,8 +35,8 @@ export function Header() {
 			}
 		}
 	}, [isOpen])
-	const toggleBurgerMenu = (newPath?: string) => {
-		setIsOpen(!isOpen)
+	const onClickLink = (newPath?: string) => {
+		setIsOpen(false)
 
 		if (typeof newPath === 'string') {
 			if (newPath === pathName) {
@@ -83,7 +83,7 @@ export function Header() {
 		<header className="h-[64px] sm:h-[68px] lg:h-[74px] 2xl:h-[80px] flex items-center relative mb-[70px] lg:mb-[111px] md:animate-fadeInBlur md:transition-opcaity">
 			<div className="flex items-center justify-between w-full px-[15px] lg:px-[25px] 2xl:px-[50px] overflow-x-hidden">
 				<CompanyLogo />
-				{!isMobile && <NavMenu onClick={toggleBurgerMenu} />}
+				{!isMobile && <NavMenu onClick={onClickLink} />}
 				<div className="hidden md:block tracking-[1px] w-[200px]">
 					<GoToNextButton
 						nextUrl="/bron"
@@ -93,7 +93,7 @@ export function Header() {
 					/>
 				</div>
 				<BurgerButton
-					toggleBurgerMenu={toggleBurgerMenu}
+					toggleBurgerMenu={() => setIsOpen(!isOpen)}
 					isOpen={isOpen}
 				/>
 			</div>
@@ -105,7 +105,7 @@ export function Header() {
 						className={`min-h-0 overflow-y-hidden ${isOpen ? 'opacity-100' : 'opacity-0'} transition-opacity duration-200`}
 					>
 						<div className="h-[calc(100vh-64px)] pb-[100px] flex justify-between flex-col">
-							<NavMenu onClick={toggleBurgerMenu} />
+							<NavMenu onClick={onClickLink} />
 							<GoToNextButton
 								padding="14px 0px"
 								borderRadius="16px"
