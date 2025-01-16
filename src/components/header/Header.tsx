@@ -73,7 +73,7 @@ export function Header() {
 					timesAnimLock = setTimeout(() => {
 						currentTitle.classList.remove('translateUpHigh')
 
-						if (Array.isArray(currentImage)) {
+						if (typeof currentImage === 'object') {
 							Array.from(currentImage).map((el, index) =>
 								el.classList.remove(
 									'translateUpLow' + (index + 1)
