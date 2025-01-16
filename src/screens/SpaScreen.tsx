@@ -65,10 +65,10 @@ export function SpaScreen() {
 					<div className="mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
 						<ImageBlock
 							imgUrl={spa4}
-							className="w-full h-full mb-[16px] lg:min-h-[420px]"
+							className="w-full h-full  lg:min-h-[420px]"
 							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 						/>
-						<p>
+						<p className="mt-[16px]">
 							Соблюдая лучшие традиции оздоровления,
 							<br /> он проведет банные ритуалы, расскажет
 							<br /> историю процедур
