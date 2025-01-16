@@ -1,5 +1,5 @@
-import { SpaScreen } from '@/screens'
+import { MessagesScreen } from '@/screens'
 
 export default function Massages() {
-	return <SpaScreen />
+	return <MessagesScreen />
 }

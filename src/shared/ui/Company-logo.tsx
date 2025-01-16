@@ -23,7 +23,7 @@ function CompanyLogo() {
 				!isTimeDisabled
 			) {
 				currentTitle.classList.add('translateUpHigh')
-				currentImage.classList.add('translateUpLow')
+				currentImage.classList.add('translateUpLow1')
 				currentDescription.classList.add('translateUpMedium')
 				if (timesAnimLock) {
 					clearTimeout(timesAnimLock)
@@ -31,7 +31,7 @@ function CompanyLogo() {
 				setIsTimeDisabled(true)
 				timesAnimLock = setTimeout(() => {
 					currentTitle.classList.remove('translateUpHigh')
-					currentImage.classList.remove('translateUpLow')
+					currentImage.classList.remove('translateUpLow1')
 					currentDescription.classList.remove(
 						'translateUpMedium'
 					)
