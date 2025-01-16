@@ -7,6 +7,7 @@ interface IGoToNext {
 	borderRadius: string
 	fontSize: string
 	nextUrl: string
+	className?: string
 }
 export function GoToNextButton({
 	children,
@@ -14,6 +15,7 @@ export function GoToNextButton({
 	borderRadius,
 	fontSize,
 	nextUrl,
+	className,
 }: IGoToNext) {
 	return (
 		<Link
@@ -23,7 +25,7 @@ export function GoToNextButton({
 				fontSize: fontSize,
 				borderRadius: borderRadius,
 			}}
-			className="font-bold bg-black lg:hover:bg-GRAY_500 transition-[background-color] duration-200 flex gap-[8px] w-full items-center justify-center text-white font-[SFpro]"
+			className={`font-bold bg-black lg:hover:bg-GRAY_500 transition-[background-color] duration-200 flex gap-[8px] w-full items-center justify-center text-white font-[SFpro] ${className && className}`}
 		>
 			Забронировать{children}
 		</Link>
