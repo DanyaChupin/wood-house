@@ -60,6 +60,8 @@ export function Header() {
 							)
 						)
 					} else {
+						// eslint-disable-next-line
+						//@ts-ignore
 						currentImage.classList.add('translateUpLow1')
 					}
 					currentTitle.classList.add('translateUpHigh')
@@ -71,13 +73,15 @@ export function Header() {
 					timesAnimLock = setTimeout(() => {
 						currentTitle.classList.remove('translateUpHigh')
 
-						if (typeof currentImage === 'object') {
+						if (Array.isArray(currentImage)) {
 							Array.from(currentImage).map((el, index) =>
 								el.classList.remove(
 									'translateUpLow' + (index + 1)
 								)
 							)
 						} else {
+							// eslint-disable-next-line
+							//@ts-ignore
 							currentImage.classList.remove(
 								'translateUpLow1'
 							)
