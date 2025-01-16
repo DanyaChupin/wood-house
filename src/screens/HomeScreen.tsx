@@ -25,6 +25,7 @@ export function HomeScreen() {
 				title="Вудхаус"
 				description="Посуточная аренда загородного дома в 50 км от МКАД.
 				Окунитесь в атмосферу уюта, стиля и спокойствия"
+				className="text-center"
 			>
 				<ImageBlock
 					imgUrl={houseOne}

@@ -44,15 +44,27 @@ export function Header() {
 				const currentTitle = document.querySelector('#sliderTitle')
 				const currentDescription =
 					document.querySelector('#sliderDescription')
-				const currentImage = document.querySelector('#sliderImage')
+				const currentImage =
+					document.querySelectorAll('#sliderImage')
 				if (
 					currentTitle &&
 					currentDescription &&
 					currentImage &&
 					!isTimeDisabled
 				) {
+					console.log(currentImage)
+					if (typeof currentImage === 'object') {
+						Array.from(currentImage).map((el, index) =>
+							el.classList.add(
+								'translateUpLow' + (index + 1)
+							)
+						)
+					} else {
+						// eslint-disable-next-line
+						//@ts-ignore
+						currentImage.classList.add('translateUpLow1')
+					}
 					currentTitle.classList.add('translateUpHigh')
-					currentImage.classList.add('translateUpLow')
 					currentDescription.classList.add('translateUpMedium')
 					if (timesAnimLock) {
 						clearTimeout(timesAnimLock)
@@ -60,7 +72,20 @@ export function Header() {
 					setIsTimeDisabled(true)
 					timesAnimLock = setTimeout(() => {
 						currentTitle.classList.remove('translateUpHigh')
-						currentImage.classList.remove('translateUpLow')
+
+						if (Array.isArray(currentImage)) {
+							Array.from(currentImage).map((el, index) =>
+								el.classList.remove(
+									'translateUpLow' + (index + 1)
+								)
+							)
+						} else {
+							// eslint-disable-next-line
+							//@ts-ignore
+							currentImage.classList.remove(
+								'translateUpLow1'
+							)
+						}
 						currentDescription.classList.remove(
 							'translateUpMedium'
 						)
