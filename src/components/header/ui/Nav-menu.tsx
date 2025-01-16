@@ -7,7 +7,7 @@ const ROUTES = [
 	},
 	{
 		name: 'Ресторан',
-		routes: '/404',
+		routes: 'none',
 	},
 	{
 		name: 'Сауна',
@@ -19,7 +19,7 @@ const ROUTES = [
 	},
 	{
 		name: 'Развлечения',
-		routes: '/404',
+		routes: 'none',
 	},
 ]
 export default function NavMenu({
