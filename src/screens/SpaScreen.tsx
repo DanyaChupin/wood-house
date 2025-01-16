@@ -1,8 +1,11 @@
+import { MessageWrapper } from '@/components/message-wrapper'
+import { SpectrsBlock } from '@/components/spectrs-block'
 import { TitlePageInfo } from '@/components/title-page-info'
 import { ImageBlock } from '@/shared/ui'
 import spa1 from '../shared/images/spa-1.png'
 import spa2 from '../shared/images/spa-2.png'
 import spa3 from '../shared/images/spa-3.png'
+import spa4 from '../shared/images/spa-4.png'
 
 export function SpaScreen() {
 	return (
@@ -51,6 +54,27 @@ export function SpaScreen() {
 					Выбирать вам, а мы сделаем все, чтобы <br /> вы ощутили
 					весь вкус вашего отдыха
 				</p>
+			</div>
+			<SpectrsBlock />
+			<div className="md:max-w-[80%]">
+				<MessageWrapper
+					title="А может выбрать профессиональное очищение?"
+					description="Если же хочется более глубокого очищения, расслабления и перезагрузки — у нас есть профессиональный банщик"
+					routsButton={false}
+				>
+					<div className="mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
+						<ImageBlock
+							imgUrl={spa4}
+							className="w-full h-full mb-[16px] lg:min-h-[420px]"
+							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
+						/>
+						<p>
+							Соблюдая лучшие традиции оздоровления,
+							<br /> он проведет банные ритуалы, расскажет
+							<br /> историю процедур
+						</p>
+					</div>
+				</MessageWrapper>
 			</div>
 		</main>
 	)

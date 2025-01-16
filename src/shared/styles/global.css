@@ -82,7 +82,38 @@ span {
 .translateUpLow2 {
 	animation: translateXUpLowAnim 1s forwards;
 }
+.slideOpen {
+	animation: anim 0.4s forwards;
+}
+.slideClose {
+	animation: animBack 0.4s forwards;
+}
 
+@keyframes anim {
+	0% {
+		opacity: 1;
+		transform: translate(0%, 0px);
+		filter: 'blur(0px)';
+	}
+	100% {
+		transform: translate(100%, 0px);
+		filter: 'blur(1px)';
+		opacity: 0;
+	}
+}
+
+@keyframes animBack {
+	0% {
+		opacity: 0;
+		transform: translate(-100%, 0px);
+		filter: 'blur(1px)';
+	}
+	100% {
+		transform: translate(0%, 0px);
+		opacity: 1;
+		filter: 'blur(0px)';
+	}
+}
 @keyframes translateXUpLowAnim {
 	0% {
 		transform: translate(0px, 0px);

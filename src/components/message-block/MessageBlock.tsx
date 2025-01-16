@@ -4,11 +4,16 @@ import { GoToNextButton } from '@/shared/ui/GoToNextButton'
 interface IMessageBlock {
 	title: string
 	description?: string
+	routsButton: boolean
 }
-export function MessageBlock({ title, description }: IMessageBlock) {
+export function MessageBlock({
+	title,
+	description,
+	routsButton,
+}: IMessageBlock) {
 	return (
-		<div className="flex flex-col sm:max-w-[50%] justify-center">
-			<h2 className="font-bold text-[32px] md:text-[36px] 2xl:text-[48px] mb-[8px] md:mb-[16px] 2xl:mb-[30px] leading-[40px] 2xl:max-w-[80%]">
+		<div className="flex flex-col sm:max-w-[50%]">
+			<h2 className="font-bold text-[32px] md:text-[36px] 2xl:text-[48px] mb-[8px] md:mb-[16px] 2xl:mb-[30px] leading-[40px] 2xl:leading-[56px] 2xl:max-w-[80%]">
 				{title}
 			</h2>
 			{description && (
@@ -16,18 +21,20 @@ export function MessageBlock({ title, description }: IMessageBlock) {
 					{description}
 				</p>
 			)}
-			<div
-				className={`sm:max-w-[213px] ${description ? '' : 'mt-[10%]'}`}
-			>
-				<GoToNextButton
-					padding="14px 0px"
-					borderRadius="16px"
-					fontSize="14px"
-					nextUrl="/bron"
+			{routsButton && (
+				<div
+					className={`sm:max-w-[213px] ${description ? '' : 'mt-[10%]'}`}
 				>
-					<ArrowIcon />
-				</GoToNextButton>
-			</div>
+					<GoToNextButton
+						padding="14px 0px"
+						borderRadius="16px"
+						fontSize="14px"
+						nextUrl="/bron"
+					>
+						<ArrowIcon />
+					</GoToNextButton>
+				</div>
+			)}
 		</div>
 	)
 }
