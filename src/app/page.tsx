@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 		follow: true,
 	},
 	icons: {
-		icon: ['/favicon.ico?v=4'],
-		shortcut: ['/favicon.ico?v=4'],
-		apple: ['/logo.svg'],
+		icon: ['./favicon.ico?v=4'],
+		shortcut: ['./favicon.ico?v=4'],
+		apple: ['./apple-touch-icon.png'],
 	},
 	openGraph: {
 		title: 'Вудхаус | Дома',

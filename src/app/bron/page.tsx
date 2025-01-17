@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { BronScreen } from '@/screens'
 
 export const metadata: Metadata = {
-	title: 'Бронировать',
+	title: 'Бронирование',
 	description:
 		'Забронируйте дом для отдыха в Вудхаус на природе. Удобная система онлайн-бронирования поможет вам выбрать идеальное место для отдыха с друзьями или семьей.',
 	keywords:
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	icons: {
 		icon: ['./favicon.ico?v=4'],
 		shortcut: ['./favicon.ico?v=4'],
-		apple: ['./logo.svg'],
+		apple: ['./apple-touch-icon.png'],
 	},
 	openGraph: {
 		title: 'Вудхаус | бронирование',
