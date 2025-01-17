@@ -8,6 +8,7 @@ interface IGoToNext {
 	fontSize: string
 	nextUrl: string
 	className?: string
+	onClick?: () => void
 }
 export function GoToNextButton({
 	children,
@@ -16,10 +17,12 @@ export function GoToNextButton({
 	fontSize,
 	nextUrl,
 	className,
+	onClick,
 }: IGoToNext) {
 	return (
 		<Link
 			href={nextUrl}
+			onClick={onClick && onClick}
 			style={{
 				padding: padding,
 				fontSize: fontSize,
