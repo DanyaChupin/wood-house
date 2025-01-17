@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { BronScreen } from '@/screens'
 
 export const metadata: Metadata = {
-	title: 'Бронировать',
+	title: 'Бронирование',
 	description:
 		'Забронируйте дом для отдыха в Вудхаус на природе. Удобная система онлайн-бронирования поможет вам выбрать идеальное место для отдыха с друзьями или семьей.',
 	keywords:
