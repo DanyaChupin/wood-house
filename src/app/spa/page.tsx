@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	icons: {
 		icon: ['./favicon.ico?v=4'],
 		shortcut: ['./favicon.ico?v=4'],
-		apple: ['./logo.svg'],
+		apple: ['./apple-touch-icon.png'],
 	},
 	openGraph: {
 		title: 'Вудхаус | Спа',
