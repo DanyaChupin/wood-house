@@ -132,6 +132,7 @@ export function Header() {
 						<div className="h-[calc(100vh-64px)] pb-[100px] flex justify-between flex-col">
 							<NavMenu onClick={onClickLink} />
 							<GoToNextButton
+								onClick={onClickLink}
 								padding="14px 0px"
 								borderRadius="16px"
 								fontSize="14px"
