@@ -14,6 +14,23 @@ export const metadata: Metadata = {
 		index: true,
 		follow: true,
 	},
+	openGraph: {
+		title: 'Вудхаус',
+		description:
+			'Вудхаус — уютный уголок на природе, где можно забронировать комфортные дома, насладиться отдыхом в спа, бане, заказать массаж и провести время в гармонии с природой.',
+		url: 'https://вудхаус.рф',
+		siteName: 'Вудхаус',
+		images: [
+			{
+				url: '../shared/images/black-house-desk-1.png',
+				width: 800,
+				height: 600,
+				alt: 'Посуточная аренда загородного дома в 50 км от МКАД | Вудxаус',
+			},
+		],
+		locale: 'ru_RU',
+		type: 'website',
+	},
 	icons: {
 		icon: ['./favicon.ico?v=4'],
 		shortcut: ['./favicon.ico?v=4'],
