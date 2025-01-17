@@ -1,16 +1,75 @@
-import Script from 'next/script'
+'use client'
+
+import { useEffect } from 'react'
 
 export function BronScreen() {
+	useEffect(() => {
+		const script = document.createElement('script')
+		script.async = true
+		script.src = '//widget.reservationsteps.ru/js/bnovo.js'
+		document.body.appendChild(script)
+
+		script.onload = () => {
+			;(function () {
+				// eslint-disable-next-line
+				//@ts-ignore
+				Bnovo_Widget.init(function () {
+					// eslint-disable-next-line
+					//@ts-ignore
+					Bnovo_Widget.open('_bn_widget_', {
+						type: 'vertical',
+						uid: '156c880f-c885-4975-95b2-81e1efcbad31',
+						lang: 'ru',
+						currency: 'RUB',
+						width: '300',
+						width_mobile: '300',
+						background: '#ffffff',
+						background_mobile: '#ffffff',
+						bg_alpha: '100',
+						bg_alpha_mobile: '100',
+						border_color_mobile: '#C6CAD3',
+						padding: '24',
+						padding_mobile: '24',
+						border_radius: '8',
+						button_font_size: '14',
+						button_height: '42',
+						font_type: 'inter',
+						title_color: '#242742',
+						title_color_mobile: '#242742',
+						title_size: '22',
+						title_size_mobile: '22',
+						inp_color: '#242742',
+						inp_bordhover: '#BBBBBB',
+						inp_bordcolor: '#DDDDDD',
+						inp_alpha: '10',
+						btn_background: '#f08f18',
+						btn_background_over: '#F08F18',
+						btn_textcolor: '#FFFFFF',
+						btn_textover: '#FFFFFF',
+						btn_bordcolor: '#F08F18',
+						btn_bordhover: '#F08F18',
+						min_age: '0',
+						max_age: '17',
+						adults_default: '1',
+						dates_preset: 'on',
+						dfrom_today: 'on',
+						dfrom_value: '2',
+						dto_nextday: 'on',
+						dto_value: '2',
+						cancel_color: '#1875F0',
+						url: 'https://wood-house-three.vercel.app/bron',
+						switch_mobiles_width: '800',
+					})
+				})
+			})()
+		}
+	}, [])
+
 	return (
 		<main
 			id="sliderScreen"
 			className="mb-[150px] lg:mb-[180px] 2xl:mb-[200px] transition-[transform, opacity] closeLeft duration-500"
 		>
-			<Script
-				id="connect_bnovo"
-				async
-				src="https://widget.reservationsteps.ru/iframe/library/dist/booking_iframe.js"
-			></Script>
 			<h1 className="flex justify-center w-full text-[72px]">
 				BronScreen
 			</h1>
@@ -23,42 +82,7 @@ export function BronScreen() {
 				<div className="w-[40%] bg-black" />
 			</div>
 
-			<div id="booking_iframe" className="relative pb-[30px]">
-				<div
-					id="bn_iframe"
-					className="font-[Proxima nova,Helvetica Neue, Cera Pro Medium, Arial, Helvetica, sans-serif] relative right-0 bottom-0 text-[12px] leading-[1em] opacity-[0.5] z-10 mt-[10px]"
-				>
-					<div className="!text-[#1403fc] !bg-[rgba(0, 0, 0, 0)]">
-						<a
-							className="!text-[#808080] !bg-[#fff]"
-							href="https://bnovo.ru/bnovo-mb/?utm_source=client_modul_br"
-							id="bnovo_link"
-							target="_blank"
-						>
-							Система управления отелем Bnovo ©
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<Script id="bnovo" type="text/javascript">
-				{`
-(function () {
-var BnovoBookFrame = new BookingIframe({
-html_id: "booking_iframe",
-uid: "156c880f-c885-4975-95b2-81e1efcbad31",
-lang: "ru",
-width: "auto",
-height: "auto",
-rooms: "",			
-IsMobile: "0",
-scroll_to_rooms: "0",
-});
-BnovoBookFrame.init();
-})();
-
-`}
-			</Script>
+			<div className="left" id="_bn_widget_" />
 		</main>
 	)
 }
