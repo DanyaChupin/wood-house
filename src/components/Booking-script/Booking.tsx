@@ -27,5 +27,7 @@ export default function Booking() {
 		}
 	}, [])
 
-	return <div className="left" id="booking_iframe" />
+	return (
+		<div className="left min-h-[500px] bg-GRAY_200" id="booking_iframe" />
+	)
 }
