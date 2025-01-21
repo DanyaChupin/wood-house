@@ -2,7 +2,6 @@
 
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import { NavLink } from '../header/ui/Nav-link'
 import { SocialLinks } from './ui/SocialLinks'
 
 const YandexCart = dynamic(() => import('./ui/YandexCart'))
@@ -51,42 +50,20 @@ export default function Footer() {
 						</p>
 					</div>
 					<SocialLinks />
-					<nav className="flex-col lg:flex hidden lg:absolute gap-[2px] lg:right-0 lg:items-end lg:bottom-0">
-						<NavLink
-							url="/"
-							onClick={() => null}
-							nameLink="Политика конфиденциальности"
-						/>
-						<NavLink
-							url="/"
-							onClick={() => null}
-							nameLink="Правила посещения"
-						/>
-						<NavLink
-							url="/"
-							onClick={() => null}
-							nameLink="Публичная оферта"
-						/>
+					<nav className="flex-col hidden lg:flex lg:absolute gap-[2px] lg:right-0 lg:items-end lg:bottom-0 font-[SFPro]">
+						<Link href="/policy">
+							Политика конфиденциальности
+						</Link>
+						<Link href="/rules">Правила посещения</Link>
+						<Link href="/oferta">Публичная оферта </Link>
 					</nav>
 				</div>
 				<YandexCart />
 			</div>
-			<nav className="flex flex-col mt-[50px] lg:hidden gap-[19px] xs:gap-[4px] ">
-				<NavLink
-					url="/"
-					onClick={() => null}
-					nameLink="Политика конфиденциальности"
-				/>
-				<NavLink
-					url="/"
-					onClick={() => null}
-					nameLink="Правила посещения"
-				/>
-				<NavLink
-					url="/"
-					onClick={() => null}
-					nameLink="Публичная оферта"
-				/>
+			<nav className="flex flex-col mt-[50px] lg:hidden gap-[5px] text-[14px] xs:gap-[4px] font-[SFPro]">
+				<Link href="/bron">Политика конфиденциальности</Link>
+				<Link href="/rules">Правила посещения</Link>
+				<Link href="/oferta">Публичная оферта </Link>
 			</nav>
 		</footer>
 	)

@@ -26,5 +26,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			changeFrequency: 'monthly',
 			priority: 0.9,
 		},
+		{
+			url: 'https://вудхаус.рф/policy',
+			lastModified: new Date(),
+			changeFrequency: 'monthly',
+			priority: 0.1,
+		},
+		{
+			url: 'https://вудхаус.рф/rules',
+			lastModified: new Date(),
+			changeFrequency: 'monthly',
+			priority: 0.1,
+		},
+		{
+			url: 'https://вудхаус.рф/oferta',
+			lastModified: new Date(),
+			changeFrequency: 'monthly',
+			priority: 0.1,
+		},
 	]
 }

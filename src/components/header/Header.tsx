@@ -40,6 +40,16 @@ export function Header() {
 
 		if (typeof newPath === 'string') {
 			if (newPath === pathName) {
+				if (pathName === '/') {
+					const productCart =
+						document.querySelector('#product-cart-1')
+					if (productCart)
+						productCart.scrollIntoView({
+							behavior: 'smooth',
+							block: 'start',
+						})
+					return
+				}
 				if (isMobile) return
 				const currentTitle = document.querySelector('#sliderTitle')
 				const currentDescription =
@@ -52,7 +62,6 @@ export function Header() {
 					currentImage &&
 					!isTimeDisabled
 				) {
-					console.log(currentImage)
 					if (typeof currentImage === 'object') {
 						Array.from(currentImage).map((el, index) =>
 							el.classList.add(

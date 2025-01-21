@@ -136,8 +136,12 @@ const HOUSING: IHouse[] = [
 export default function ProductList() {
 	return (
 		<div>
-			{HOUSING.map((house) => (
-				<ProductCard house={house} key={house.title} />
+			{HOUSING.map((house, index) => (
+				<ProductCard
+					id={(index + 1).toString()}
+					house={house}
+					key={house.title}
+				/>
 			))}
 		</div>
 	)
