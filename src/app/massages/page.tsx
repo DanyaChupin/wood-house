@@ -33,6 +33,8 @@ export const metadata: Metadata = {
 		locale: 'ru_RU',
 		type: 'website',
 	},
+
+	alternates: { canonical: 'https://вудхаус.рф/massages' },
 }
 export default function Massages() {
 	return <MessagesScreen />
