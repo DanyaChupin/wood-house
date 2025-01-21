@@ -46,7 +46,7 @@ export function Header() {
 					if (productCart)
 						productCart.scrollIntoView({
 							behavior: 'smooth',
-							block: 'center',
+							block: 'start',
 						})
 					return
 				}
