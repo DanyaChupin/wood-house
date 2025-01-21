@@ -33,6 +33,8 @@ export const metadata: Metadata = {
 		locale: 'ru_RU',
 		type: 'website',
 	},
+
+	alternates: { canonical: 'https://вудхаус.рф/bron' },
 }
 export default function Bron() {
 	return <BronScreen />

@@ -33,6 +33,8 @@ export const metadata: Metadata = {
 		locale: 'ru_RU',
 		type: 'website',
 	},
+
+	alternates: { canonical: 'https://вудхаус.рф' },
 }
 export default function Home() {
 	return <HomeScreen />

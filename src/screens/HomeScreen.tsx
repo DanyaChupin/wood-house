@@ -1,3 +1,5 @@
+'use client'
+
 import dynamic from 'next/dynamic'
 import { YandexInfo } from '@/components/home'
 import { TitlePageInfo } from '@/components/title-page-info'
@@ -17,28 +19,30 @@ const ProductList = dynamic(
 
 export function HomeScreen() {
 	return (
-		<main
-			id="sliderScreen"
-			className="transition-[transform, opacity] closeLeft duration-200"
-		>
-			<TitlePageInfo
-				title="Вудхаус"
-				description="Посуточная аренда загородного дома в 50 км от МКАД.
-				Окунитесь в атмосферу уюта, стиля и спокойствия"
-				className="sm:text-center"
+		<>
+			<main
+				id="sliderScreen"
+				className="transition-[transform, opacity] closeLeft duration-200"
 			>
-				<ImageBlock
-					imgUrl={houseOne}
-					id="sliderImage"
-					className="w-full h-[511px] 2xl:h-[604px] mb-[150px] lg:mb-[200px] 2xl:mb-[268px]"
-					alt="Посуточная аренда загородного дома в 50 км от МКАД."
-				/>
-			</TitlePageInfo>
-			<HomeInfoSection />
-			<ProductList />
-			<ProsBlock />
-			<YandexInfo />
-			<ReviewsBlock />
-		</main>
+				<TitlePageInfo
+					title="Вудхаус"
+					description="Посуточная аренда загородного дома в 50 км от МКАД.
+				Окунитесь в атмосферу уюта, стиля и спокойствия"
+					className="sm:text-center"
+				>
+					<ImageBlock
+						imgUrl={houseOne}
+						id="sliderImage"
+						className="w-full h-[511px] 2xl:h-[604px] mb-[150px] lg:mb-[200px] 2xl:mb-[268px]"
+						alt="Посуточная аренда загородного дома в 50 км от МКАД."
+					/>
+				</TitlePageInfo>
+				<HomeInfoSection />
+				<ProductList />
+				<ProsBlock />
+				<YandexInfo />
+				<ReviewsBlock />
+			</main>
+		</>
 	)
 }

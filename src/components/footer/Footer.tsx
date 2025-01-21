@@ -1,15 +1,19 @@
+'use client'
+
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
+import { NavLink } from '../header/ui/Nav-link'
 import { SocialLinks } from './ui/SocialLinks'
 
 const YandexCart = dynamic(() => import('./ui/YandexCart'))
 export default function Footer() {
 	return (
-		<footer className="mb-[100px]">
+		<footer className="mb-[100px] relative">
 			<h5 className="text-[32px] leading-[40px] 2xl:text-[48px] lg:text-[36px] lg:leading-[48px] flex w-full justify-center 2xl:leading-[56px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
-				Это тихое место идеально <br /> подходит для тех, кто ищет
-				<br /> гармонию с природой и<br /> уединение от городской
-				суеты
+				мы считаем, что отдых
+				<br />
+				должен быть максимально уютным и <br /> спокойным, поэтому
+				стараемся <br /> делать все для этого
 			</h5>
 			<div className="flex flex-col lg:flex-row gap-[30px] 2xl:gap-[70px]">
 				<div className="lg:w-[60%] xl:w-[50%]">
@@ -47,9 +51,43 @@ export default function Footer() {
 						</p>
 					</div>
 					<SocialLinks />
+					<nav className="flex-col lg:flex hidden lg:absolute gap-[2px] lg:right-0 lg:items-end lg:bottom-0">
+						<NavLink
+							url="/"
+							onClick={() => null}
+							nameLink="Политика конфиденциальности"
+						/>
+						<NavLink
+							url="/"
+							onClick={() => null}
+							nameLink="Правила посещения"
+						/>
+						<NavLink
+							url="/"
+							onClick={() => null}
+							nameLink="Публичная оферта"
+						/>
+					</nav>
 				</div>
 				<YandexCart />
 			</div>
+			<nav className="flex flex-col mt-[50px] lg:hidden gap-[19px] xs:gap-[4px] ">
+				<NavLink
+					url="/"
+					onClick={() => null}
+					nameLink="Политика конфиденциальности"
+				/>
+				<NavLink
+					url="/"
+					onClick={() => null}
+					nameLink="Правила посещения"
+				/>
+				<NavLink
+					url="/"
+					onClick={() => null}
+					nameLink="Публичная оферта"
+				/>
+			</nav>
 		</footer>
 	)
 }
