@@ -61,7 +61,7 @@ export default function Footer() {
 				<YandexCart />
 			</div>
 			<nav className="flex flex-col mt-[50px] lg:hidden gap-[5px] text-[14px] xs:gap-[4px] font-[SFPro]">
-				<Link href="/bron">Политика конфиденциальности</Link>
+				<Link href="/policy">Политика конфиденциальности</Link>
 				<Link href="/rules">Правила посещения</Link>
 				<Link href="/oferta">Публичная оферта </Link>
 			</nav>
