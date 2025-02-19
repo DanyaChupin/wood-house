@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 		follow: true,
 	},
 	verification: {
-		yandex: 'Z6e4toSEcotF_YIDPppu3ga1IFlCLd0xcbbYSkSQ6gI',
-		google: 'd7b7c6f43dd4f111',
+		yandex: 'd7b7c6f43dd4f111',
+		google: 'Z6e4toSEcotF_YIDPppu3ga1IFlCLd0xcbbYSkSQ6gI',
 	},
 	openGraph: {
 		title: 'Вудхаус',
