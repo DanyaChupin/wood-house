@@ -1,6 +1,8 @@
 'use client'
 
 import dynamic from 'next/dynamic'
+import { bgAccent } from '@/shared/const/bgAccent'
+import { ROUNDED } from '@/shared/const/rounded'
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'
 import { IHouse } from '@/shared/types/type'
 import ProductDescription from './ui/ProductDescription'
@@ -15,7 +17,7 @@ export function ProductCard({ house, id }: { house: IHouse; id: string }) {
 	return (
 		<section
 			id={'product-cart-' + id}
-			className="mb-[150px] lg:mb-[180px] 2xl:mb-[200px]"
+			className={`${bgAccent} ${ROUNDED.md} md:bg-transparent md:rounded-none p-[25px] lg:p-0 lg:py-[50px] `}
 		>
 			<div className="flex flex-col md:flex-row md:justify-between md:items-center gap-[8px] mb-[16px] lg:mb-[22px] 2xl:mb-[30px]">
 				<ProductTitle title={house.title} />

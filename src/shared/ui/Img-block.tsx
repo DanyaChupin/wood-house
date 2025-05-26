@@ -9,15 +9,15 @@ interface IImageBlock {
 	alt: string
 	id?: string
 }
-export function ImageBlock({ imgUrl, className, alt, id }: IImageBlock) {
+export function ImageBlock({ imgUrl, className = '', alt, id }: IImageBlock) {
 	const [isLoading, setIsLoading] = useState(true)
 	return (
-		<div id={id && id} className="relative w-full h-fit">
+		<div id={id && id} className="relative">
 			<div
-				className={`${isLoading ? 'animate-pulse' : 'opacity-100'} z-10 absolute transition-opacity bg-gray-200 ${className && className}`}
+				className={`${isLoading ? 'animate-pulse' : 'opacity-100'} z-10 absolute transition-opacity bg-gray-200 ${className ? className : ''}`}
 			/>
 			<Image
-				className={`object-cover relative z-20 ${!isLoading ? 'opacity-100' : 'opacity-0'} duration-500 transition-opacity ${className && className}`}
+				className={`object-cover relative z-20 ${!isLoading ? 'opacity-100' : 'opacity-0'} duration-500 transition-opacity ${className ? className : ''}`}
 				onLoad={() => setIsLoading(false)}
 				loading="lazy"
 				src={imgUrl}

@@ -1,5 +1,6 @@
 import { MessageWrapper } from '@/components/message-wrapper'
 import { TitlePageInfo } from '@/components/title-page-info'
+import { ROUNDED } from '@/shared/const/rounded'
 import { ArrowIcon } from '@/shared/icons/Arrow-icon'
 import { ImageBlock } from '@/shared/ui'
 import { GoToNextButton } from '@/shared/ui/GoToNextButton'
@@ -26,20 +27,20 @@ export function MessagesScreen() {
 						<ImageBlock
 							imgUrl={massages1}
 							id="sliderImage"
-							className="w-full h-[250px] xs:h-[350px] xl:h-[420px]"
+							className={`w-full h-[250px] xs:h-[350px] xl:h-[420px] ${ROUNDED.md} ${ROUNDED.lg}`}
 							alt="Посуточная аренда загородного дома в 50 км от МКАД."
 						/>
 					</div>
 					<ImageBlock
 						imgUrl={massages2}
 						id="sliderImage"
-						className="w-full h-[500px] sm:h-[350px] xl:h-[420px]"
+						className={`w-full h-[500px] sm:h-[350px] xl:h-[420px] ${ROUNDED.md} ${ROUNDED.lg}`}
 						alt="Посуточная аренда загородного дома в 50 км от МКАД."
 					/>
 				</div>
 			</TitlePageInfo>
 			<div className="flex flex-col sm:flex-row gap-[20px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
-				<div className=" w-full flex flex-col gap-[25px] sm:justify-between md:w-[50%]">
+				<div className="w-full flex flex-col gap-[25px] sm:justify-between md:w-[50%]">
 					<h2 className="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[50px] 2xl:leading-[56px]">
 						Отдых телом
 						<br /> и душой
@@ -97,7 +98,7 @@ export function MessagesScreen() {
 				<div className="shrink-1">
 					<ImageBlock
 						imgUrl={massages3}
-						className="hidden sm:block sm:w-[100%] sm:h-[445px] lg:h-[353px]"
+						className={`hidden sm:block sm:w-[100%] sm:h-[445px] lg:h-[353px] ${ROUNDED.md}`}
 						alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 					/>
 				</div>
@@ -108,14 +109,14 @@ export function MessagesScreen() {
 						<div className="w-[85%] snap-center shrink-0 md:shrink ml-[15px] sm:ml-0 sm:w-full">
 							<ImageBlock
 								imgUrl={massages4}
-								className="w-full max-h-[368px] xs:max-h-[430px] sm:max-h-[250px] lg:max-h-full sm:min-h-auto lg:min-h-[360px] 2xl:min-h-[469px]"
+								className={`w-full max-h-[368px] xs:max-h-[430px] sm:max-h-[250px] lg:max-h-full sm:min-h-auto lg:min-h-[360px] 2xl:min-h-[469px] ${ROUNDED.md}`}
 								alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 							/>
 						</div>
 						<div className="w-[calc(85%+15px)] snap-center shrink-0 md:shrink pr-[15px] sm:pr-0 sm:w-full">
 							<ImageBlock
 								imgUrl={massages5}
-								className="w-full max-h-[368px] xs:max-h-[430px] sm:max-h-[250px] lg:max-h-full sm:min-h-auto lg:min-h-[360px] 2xl:min-h-[469px]"
+								className={`w-full max-h-[368px] xs:max-h-[430px] sm:max-h-[250px] lg:max-h-full sm:min-h-auto lg:min-h-[360px] 2xl:min-h-[469px] ${ROUNDED.md}`}
 								alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 							/>
 						</div>

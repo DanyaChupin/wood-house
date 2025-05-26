@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { StaticImageData } from 'next/image'
+import { ROUNDED } from '@/shared/const/rounded'
 import { ArrowIcon } from '@/shared/icons/Arrow-icon'
 import { animateSlider } from '../lib/animateSlider'
 import ProductSliderDeskMap from './ProductSliderDeskMap'
@@ -33,7 +34,7 @@ export default function ProductSliderDesk({
 		<div className="relative">
 			<div
 				ref={slideRef}
-				className="w-full flex snap-mandatory snap-x scrollbar-hide overflow-x-scroll mb-[30px]"
+				className={`w-full flex snap-mandatory snap-x scrollbar-hide overflow-x-scroll mb-[30px] ${ROUNDED.md}`}
 			>
 				<ProductSliderDeskMap imgUrls={imgUrls} alt={alt} />
 			</div>

@@ -15,7 +15,7 @@ export function TitlePageInfo({
 	return (
 		<section>
 			<div
-				className={`flex flex-col gap-[25px] sm:gap-[30px] lg:gap-[40px] 2xl:gap-[50px] mb-[71px] sm:mb-[61px] lg:mb-[50px] sm:items-center ${className && className}`}
+				className={`flex flex-col gap-[25px] sm:gap-[30px] lg:gap-[40px] 2xl:gap-[50px] mb-[25px] sm:mb-[61px] lg:mb-[50px] sm:items-center ${className && className}`}
 			>
 				<h1
 					id="sliderTitle"

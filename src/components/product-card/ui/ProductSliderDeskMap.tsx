@@ -17,7 +17,7 @@ function ProductSliderDeskMap({
 					key={img.src}
 				>
 					<ImageBlock
-						className="h-full shrink-0 w-full"
+						className={`h-full shrink-0 w-full`}
 						imgUrl={img}
 						alt={alt}
 					/>

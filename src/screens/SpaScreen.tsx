@@ -1,6 +1,7 @@
 import { MessageWrapper } from '@/components/message-wrapper'
 import { SpectrsBlock } from '@/components/spectrs-block'
 import { TitlePageInfo } from '@/components/title-page-info'
+import { ROUNDED } from '@/shared/const/rounded'
 import { ImageBlock } from '@/shared/ui'
 import spa1 from '../shared/images/spa-1.png'
 import spa2 from '../shared/images/spa-2.png'
@@ -23,7 +24,7 @@ export function SpaScreen() {
 					<ImageBlock
 						imgUrl={spa1}
 						id="sliderImage"
-						className="w-full h-[511px] sm:h-[400px] xl:h-[456px]"
+						className={`w-full h-[511px] sm:h-[400px] xl:h-[456px] ${ROUNDED.md} ${ROUNDED.lg}`}
 						alt="Посуточная аренда загородного дома в 50 км от МКАД."
 					/>
 					<div className="flex gap-[15px] lg:gap-[20px]">
@@ -31,14 +32,14 @@ export function SpaScreen() {
 							<ImageBlock
 								imgUrl={spa2}
 								id="sliderImage"
-								className="w-full h-[220px] sm:h-[380px] xl:h-[420px]"
+								className={`w-full h-[220px] sm:h-[380px] xl:h-[420px] ${ROUNDED.md} ${ROUNDED.lg}`}
 								alt="Посуточная аренда загородного дома в 50 км от МКАД."
 							/>
 						</div>
 						<ImageBlock
 							imgUrl={spa3}
 							id="sliderImage"
-							className="w-full h-[220px] sm:h-[380px] xl:h-[420px]"
+							className={`w-full h-[220px] sm:h-[380px] xl:h-[420px] ${ROUNDED.md} ${ROUNDED.lg}`}
 							alt="Посуточная аренда загородного дома в 50 км от МКАД."
 						/>
 					</div>
@@ -56,16 +57,16 @@ export function SpaScreen() {
 				</p>
 			</div>
 			<SpectrsBlock />
-			<div className="md:max-w-[80%]">
+			<div className="md:max-w-[80%] mb-[20px] lg:mb-[100px] 2xl:mb-[150px]">
 				<MessageWrapper
 					title="А может выбрать профессиональное очищение?"
 					description="Если же хочется более глубокого очищения, расслабления и перезагрузки — у нас есть профессиональный банщик"
 					routsButton={false}
 				>
-					<div className="mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
+					<div>
 						<ImageBlock
 							imgUrl={spa4}
-							className="w-full h-full  lg:min-h-[420px]"
+							className={`w-full h-full ${ROUNDED.md} lg:min-h-[420px]`}
 							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
 						/>
 						<p className="mt-[16px]">

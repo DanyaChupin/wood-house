@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { HomeScreen } from '@/screens'
 
 export const metadata: Metadata = {
-	title: 'Вудхаус | Дома',
+	title: 'Вудхаус',
 	description:
 		'Вудхаус — уютный уголок на природе, где можно забронировать комфортные дома, насладиться отдыхом в спа, бане, заказать массаж и провести время в гармонии с природой.',
 	keywords:
