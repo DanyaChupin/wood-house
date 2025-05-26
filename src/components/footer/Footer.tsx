@@ -2,18 +2,36 @@
 
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
+import { ROUNDED } from '@/shared/const/rounded'
+import { ImageBlock } from '@/shared/ui'
+import footerImg from '../../shared/images/footer-img.png'
 import { SocialLinks } from './ui/SocialLinks'
 
 const YandexCart = dynamic(() => import('./ui/YandexCart'))
 export default function Footer() {
 	return (
 		<footer className="mb-[100px] relative">
-			<h5 className="text-[32px] leading-[40px] 2xl:text-[48px] lg:text-[36px] lg:leading-[48px] flex w-full justify-center 2xl:leading-[56px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
-				мы считаем, что отдых
-				<br />
-				должен быть максимально уютным и <br /> спокойным, поэтому
-				стараемся <br /> делать все для этого
-			</h5>
+			<div
+				className={`relative h-[450px] mb-[20px] lg:mb-[100px] 2xl:mb-[150px] xl:h-[640px] w-full ${ROUNDED.md} overflow-hidden`}
+			>
+				<h5 className="text-[32px] z-30 text-white absolute whitespace-pre-wrap sm:bottom-0 left-0 sm:top-0  right-0 top-[25px] grid sm:place-items-center leading-[40px] 2xl:text-[48px] lg:text-[36px] lg:leading-[48px] w-full justify-center 2xl:leading-[56px]">
+					Это тихое место
+					<br />
+					идеально подходит
+					<br />
+					для тех, кто ищет
+					<br />
+					гармонию с природой
+					<br />и уединение от
+					<br />
+					городской суеты
+				</h5>
+				<ImageBlock
+					imgUrl={footerImg}
+					className={`w-full min-h-[450px] object-left ${ROUNDED.lg} h-full`}
+					alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
+				/>
+			</div>
 			<div className="flex flex-col lg:flex-row gap-[30px] 2xl:gap-[70px]">
 				<div className="lg:w-[60%] xl:w-[50%]">
 					<div className="flex flex-col mb-[30px]">

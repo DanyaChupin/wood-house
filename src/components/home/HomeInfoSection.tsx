@@ -1,89 +1,9 @@
-import { MessageWrapper } from '@/components/message-wrapper'
-import { ImageBlock } from '@/shared/ui'
-import houseElem1 from '../../shared/images/house-one-elem-1.png'
-import houseElem2 from '../../shared/images/house-one-elem-2.png'
-import houseElem3 from '../../shared/images/house-one-elem-3.png'
-import houseElem4 from '../../shared/images/house-one-elem-4.png'
-import houseElem5 from '../../shared/images/house-one-elem-5.png'
-import houseElem6 from '../../shared/images/house-one-elem-6.png'
-import houseElem7 from '../../shared/images/house-one-elem-7.png'
+import { DescriptionOfAdvantages } from '../descriptionOfAdvantages/DescriptionOfAdvantages'
 
 export default function HomeInfoSection() {
 	return (
 		<section>
-			<MessageWrapper
-				title="Это тихое место идеально подходит для тех, кто ищет гармонию с природой и уединение от городской суеты"
-				description="Коттеджный комплекс Вудхаус состоит из 2 домов и находится в тихом и красивом месте: на окраине поселка рядом с лесом на берегу маленькой речки"
-			>
-				<div className="w-full flex sm:flex-col lg:flex-row gap-[12px] lg:gap-[16px] 2xl:gap-[20px]">
-					<ImageBlock
-						imgUrl={houseElem1}
-						className="w-full h-full min-h-[226px] sm:max-h-[250px] lg:max-h-full xl:min-h-[360px] 2xl:min-h-[460px]"
-						alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
-					/>
-					<ImageBlock
-						imgUrl={houseElem2}
-						className="w-full h-full min-h-[226px] sm:max-h-[250px] lg:max-h-full xl:min-h-[360px] 2xl:min-h-[460px]"
-						alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
-					/>
-				</div>
-			</MessageWrapper>
-			<div className="mb-[150px] lg:mb-[180px] 2xl:mb-[200px]" />
-			<MessageWrapper title="Собственная сауна, купель, массаж и природа...">
-				<div className="flex flex-col gap-[16px] xl:gap-[22px] 2xl:gap-[30px] mb-[50px]">
-					<div className="w-[calc(100%+30px)] snap-mandatory snap-x sm:w-full sm:ml-0 scrollbar-hide overflow-x-scroll md:overflow-x-visible flex ml-[-15px] sm:flex-col lg:flex-row gap-[12px] lg:gap-[16px] 2xl:gap-[20px]">
-						<div className="w-[85%] snap-center shrink-0 md:shrink ml-[15px] sm:ml-0 sm:w-full">
-							<ImageBlock
-								imgUrl={houseElem3}
-								className="w-full max-h-[368px] xs:max-h-[430px] sm:max-h-[250px] lg:max-h-full sm:min-h-auto xl:min-h-[360px] 2xl:min-h-[469px]"
-								alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
-							/>
-						</div>
-						<div className="w-[calc(85%+15px)] snap-center shrink-0 md:shrink pr-[15px] sm:pr-0 sm:w-full">
-							<ImageBlock
-								imgUrl={houseElem4}
-								className="w-full max-h-[368px] xs:max-h-[430px] sm:max-h-[250px] lg:max-h-full sm:min-h-auto xl:min-h-[360px] 2xl:min-h-[469px]"
-								alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
-							/>
-						</div>
-					</div>
-					<p className="max-w-[85%] lg:max-w-[50%] leading-[24px]">
-						Два новых коттеджа с дизайнерским ремонтом и
-						огнище, чтобы посидеть  у костра в кругу родных и
-						близких
-					</p>
-				</div>
-			</MessageWrapper>
-			<div className="flex flex-col gap-[16px] lg:gap-[22px] 2xl:gap-[30px] mb-[150px] lg:mb-[180px] 2xl:mb-[200px]">
-				<div className="flex snap-mandatory snap-x w-[calc(100%+30px)] sm:w-full sm:ml-0 sm:flex-row-reverse ml-[-15px] overflow-x-scroll sm:overflow-x-visible gap-[12px] lg:gap-[16px] 2xl:gap-[20px] flex-nowrap scrollbar-hide">
-					<div className="hidden sm:block w-[45%] snap-center h-[368px] sm:h-[200px] md:h-full sm:max-h-[232px]">
-						<ImageBlock
-							imgUrl={houseElem7}
-							className="w-full h-full"
-							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
-						/>
-					</div>
-					<div className="w-[85%] shrink-0 snap-center ml-[15px] sm:ml-0 sm:w-full sm:shrink h-[368px]">
-						<ImageBlock
-							imgUrl={houseElem5}
-							className="w-full h-[368px] sm:min-h-full"
-							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
-						/>
-					</div>
-					<div className="w-[85%] shrink-0 snap-center pr-[15px] sm:w-[45%] sm:pr-0 sm:shrink h-[368px] self-end sm:h-fit md:h-full sm:mb-[-30px] sm:max-h-[232px]">
-						<ImageBlock
-							imgUrl={houseElem6}
-							className="w-full h-[368px] sm:h-full"
-							alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
-						/>
-					</div>
-				</div>
-				<p className="sm:ml-[25%] lg:ml-[24.5%] max-w-[90%] sm:max-w-[50%] lg:max-w-[35%] leading-[24px]">
-					У каждого дома собственная сауна, а на улице теплая
-					купель. Можно обратиться к профессионалам и насладиться
-					массажем или арома-терапией в сауне
-				</p>
-			</div>
+			<DescriptionOfAdvantages />
 		</section>
 	)
 }

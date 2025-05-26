@@ -1,1 +1,0 @@
-export { YandexInfo } from './YandexInfo'

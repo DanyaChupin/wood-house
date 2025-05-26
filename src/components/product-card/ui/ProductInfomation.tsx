@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image'
+import { ROUNDED } from '@/shared/const/rounded'
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'
 import { ImageBlock } from '@/shared/ui'
 import { Convenience } from './Convenience'
@@ -18,7 +19,7 @@ export function ProductInformation({ prevImg, houseName }: IProductInfomation) {
 						<ImageBlock
 							key={img.src}
 							imgUrl={img}
-							className="max-w-[287px] h-full w-full max-h-[266px]"
+							className={`max-w-[287px] h-full w-full max-h-[266px] ${ROUNDED.md}`}
 							alt={houseName}
 						/>
 					))}

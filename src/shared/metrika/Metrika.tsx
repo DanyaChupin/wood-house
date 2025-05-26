@@ -33,16 +33,15 @@ export const Metrika = () => {
         trackLinks:true,
         accurateTrackBounce:true,
         webvisor:true
-   });
-`}
+   });`}
 			</Script>
 			<noscript>
 				<div>
 					<Image
 						loading="lazy"
-						src="https://mc.yandex.ru/watch/98660635"
 						className="position:absolute; left:-9999px;"
-						alt=""
+						src="https://mc.yandex.ru/watch/98660635"
+						alt="yandex"
 					/>
 				</div>
 			</noscript>
