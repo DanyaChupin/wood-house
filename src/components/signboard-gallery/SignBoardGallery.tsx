@@ -1,3 +1,5 @@
+'use client'
+
 import { bgAccent } from '@/shared/const/bgAccent'
 import { ROUNDED } from '@/shared/const/rounded'
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'

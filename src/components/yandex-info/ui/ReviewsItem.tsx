@@ -1,3 +1,5 @@
+'use client'
+
 import { StaticImageData } from 'next/image'
 import { ROUNDED } from '@/shared/const/rounded'
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'
