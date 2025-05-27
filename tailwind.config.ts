@@ -69,6 +69,7 @@ export default {
 						filter: 'blur(0px)',
 					},
 				},
+
 				fadeIn: {
 					'0%': {
 						opacity: '0',

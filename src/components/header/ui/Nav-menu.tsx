@@ -5,12 +5,12 @@ const ROUTES = [
 		name: 'Дома',
 		routes: '/',
 	},
+	// {
+	// 	name: 'Ресторан',
+	// 	routes: 'none',
+	// },
 	{
-		name: 'Ресторан',
-		routes: 'none',
-	},
-	{
-		name: 'Сауна',
+		name: 'Баня',
 		routes: '/spa',
 	},
 	{
@@ -19,13 +19,13 @@ const ROUTES = [
 	},
 	{
 		name: 'Развлечения',
-		routes: 'none',
+		routes: null,
 	},
 ]
 export default function NavMenu({
 	onClick,
 }: {
-	onClick?: (newPath?: string) => void
+	onClick?: (newPath?: string | null) => void
 }) {
 	return (
 		<nav className="flex flex-col justify-center md:items-center md:flex-row gap-[15px] w-full h-full 2xl:gap-[32px]">

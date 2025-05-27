@@ -6,7 +6,6 @@ import { ImageBlock } from '@/shared/ui'
 import { GoToNextButton } from '@/shared/ui/GoToNextButton'
 import massages1 from '../shared/images/massages-1.png'
 import massages2 from '../shared/images/massages-2.png'
-import massages3 from '../shared/images/massages-3.png'
 import massages4 from '../shared/images/massages-4.png'
 import massages5 from '../shared/images/massages-5.png'
 
@@ -48,13 +47,15 @@ export function MessagesScreen() {
 					<div className="flex flex-col lg:flex-row shrink-0 gap-[10px] xl:gap-[20px] 2xl:gap-[40px] w-full">
 						<div className="w-full sm:flex sm:flex-col mb-[120px] gap-[10px] sm:mb-[50px] lg:mb-0 lg:self-end xl:relative">
 							<div className="flex flex-row w-full justify-between mb-[16px] gap-[10px] xl:mb-0 lg:flex-col">
-								<strong>Массаж всего тела</strong>
+								<strong>
+									комплексный массаж всего тела
+								</strong>
 								<div className="flex flex-col gap-[6px]">
 									<span className="self-end sm:self-start whitespace-nowrap font-bold text-[20px] ">
-										5 500 ₽
+										5 000 ₽
 									</span>
 									<span className="self-end sm:self-start">
-										45 минут
+										до 45 минут
 									</span>
 								</div>
 							</div>
@@ -71,15 +72,16 @@ export function MessagesScreen() {
 						<div className="w-full sm:flex sm:flex-col gap-[10px] xl:relative">
 							<div className="flex flex-row w-full justify-between  gap-[10px] mb-[16px] xl:mb-0 lg:flex-col">
 								<strong>
-									Массаж
-									<br /> шейноворотниковой зоны
+									массаж шейно-воротниковой зоны
+									{/* Массаж */}
+									{/* <br /> шейноворотниковой зоны */}
 								</strong>
 								<div className="flex flex-col gap-[6px]">
 									<span className="self-end sm:self-start whitespace-nowrap font-bold text-[20px]">
-										1 500 ₽
+										2 000 ₽
 									</span>
 									<span className="self-end sm:self-start">
-										15 минут
+										до 20 минут
 									</span>
 								</div>
 							</div>
@@ -95,13 +97,13 @@ export function MessagesScreen() {
 						</div>
 					</div>
 				</div>
-				<div className="shrink-1">
-					<ImageBlock
-						imgUrl={massages3}
-						className={`hidden sm:block sm:w-[100%] sm:h-[445px] lg:h-[353px] ${ROUNDED.md}`}
-						alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse"
-					/>
-				</div>
+				{/* <div className="shrink-1"> */}
+				{/* 	<ImageBlock */}
+				{/* 		imgUrl={massages3} */}
+				{/* 		className={`hidden sm:block sm:w-[100%] sm:h-[445px] lg:h-[353px] ${ROUNDED.md}`} */}
+				{/* 		alt="Посуточная аренда загородного дома в 50 км от МКАД | WoodHouse" */}
+				{/* 	/> */}
+				{/* </div> */}
 			</div>
 			<MessageWrapper title="Собственная сауна, купель, массаж и природа...">
 				<div className="flex flex-col gap-[16px] xl:gap-[22px] 2xl:gap-[30px] mb-[50px] sm:mb-0">

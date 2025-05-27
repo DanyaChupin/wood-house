@@ -1,12 +1,8 @@
-'use client'
-
 import dynamic from 'next/dynamic'
 import { SignBoardGallery } from '@/components/signboard-gallery/SignBoardGallery'
+import { SliderPreviewPhotos } from '@/components/slider-preview-photos/SliderPreviewPhotos'
 import { TitlePageInfo } from '@/components/title-page-info'
 import { YandexInfo } from '@/components/yandex-info/YandexInfo'
-import { ROUNDED } from '@/shared/const/rounded'
-import { ImageBlock } from '@/shared/ui'
-import houseOne from '../shared/images/house-one.png'
 
 // const ProsBlock = dynamic(() => import('@/components/pros-block/ProsBlock'))
 // const ReviewsBlock = dynamic(
@@ -32,12 +28,7 @@ export function HomeScreen() {
 				Окунитесь в атмосферу уюта, стиля и спокойствия"
 					className="sm:text-center"
 				>
-					<ImageBlock
-						imgUrl={houseOne}
-						id="sliderImage"
-						className={`w-full h-[511px] 2xl:h-[604px] mb-[20px] lg:mb-[100px] 2xl:mb-[150px] ${ROUNDED.md} ${ROUNDED.lg}`}
-						alt="Посуточная аренда загородного дома в 50 км от МКАД."
-					/>
+					<SliderPreviewPhotos />
 				</TitlePageInfo>
 				<HomeInfoSection />
 				<ProductList />

@@ -1,3 +1,5 @@
+'use client'
+
 import { ROUNDED } from '@/shared/const/rounded'
 import { useBreakpoints } from '@/shared/hooks/useBreakpoints'
 import { ImageBlock } from '@/shared/ui'

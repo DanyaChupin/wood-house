@@ -1,3 +1,4 @@
+import { AnnotationLabel } from '@/components/annotationLabel/AnnotationLabel'
 import { AnimalIcon } from '@/shared/icons/Animal-icon'
 import { ArrowIcon } from '@/shared/icons/Arrow-icon'
 import { ClosetIcon } from '@/shared/icons/Closet-icon'
@@ -24,7 +25,7 @@ export function Convenience() {
 					<p>спальня (двуспальная кровать)</p>
 				</li>
 				<li>
-					<p>кухня-гостиная с +2 спальными местами*</p>
+					<p>кухня-гостиная с +2 спальными местами</p>
 				</li>
 				<li>
 					<p>ванная комната</p>
@@ -33,13 +34,13 @@ export function Convenience() {
 					<p>теплая купель для купания*</p>
 				</li>
 				<li>
-					<p>сауна</p>
+					<p>баня*</p>
 				</li>
 				<li>
 					<p>мангальная зона</p>
 				</li>
 			</ul>
-			<div className="sm:max-w-[213px] mb-[10px]">
+			<div className="sm:max-w-[213px] flex flex-col gap-[10px] mb-[10px]">
 				<GoToNextButton
 					padding="14px 0px"
 					borderRadius="16px"
@@ -48,11 +49,11 @@ export function Convenience() {
 				>
 					<ArrowIcon />
 				</GoToNextButton>
+				<AnnotationLabel
+					bgColor="bg-white lg:bg-WHITE_700"
+					lable="*Дополнительная стоимость"
+				/>
 			</div>
-			<p className="text-GRAY_400 leading-[14px] text-[12px]">
-				*Информацию по дополнительным спальным местам уточняйте
-				<br />у администратора
-			</p>
 		</div>
 	)
 }

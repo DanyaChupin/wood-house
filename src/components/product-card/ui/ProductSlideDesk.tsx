@@ -22,7 +22,7 @@ export default function ProductSliderDesk({
 		if (isDisabled) {
 			timeout = setTimeout(() => {
 				setIsDisabled(false)
-			}, 700)
+			}, 200)
 		}
 		return () => {
 			if (timeout) {

@@ -11,10 +11,10 @@ export default function ProductSliderMobile({
 	alt,
 }: IProductSliderMobile) {
 	return (
-		<div className="w-[calc(100%+50px)] snap-mandatory snap-x overflow-y-hidden scrollbar-hide ml-[-25px] flex gap-[16px] mb-[16px] overflow-x-scroll md:hidden">
+		<div className="w-[calc(100%+50px)] snap-mandatory snap-x overflow-y-hidden pr-[15px] scrollbar-hide ml-[-25px] flex gap-[16px] mb-[16px] overflow-x-scroll md:hidden">
 			{imgUrls.map((img) => (
 				<div
-					className="shrink-0 snap-center first:ml-[15px] last:pr-[15px] w-[87%]"
+					className="shrink-0 snap-center first:ml-[15px] w-[87%]"
 					key={img.src}
 				>
 					<ImageBlock

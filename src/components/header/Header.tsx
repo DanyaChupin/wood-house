@@ -26,6 +26,7 @@ export function Header() {
 			newScreen.classList.remove('close') // Добавляем класс при открытии
 		}
 	}, [pathName])
+
 	useEffect(() => {
 		if (document) {
 			if (isOpen) {
@@ -35,7 +36,8 @@ export function Header() {
 			}
 		}
 	}, [isOpen])
-	const onClickLink = (newPath?: string) => {
+
+	const onClickLink = (newPath?: string | null) => {
 		setIsOpen(false)
 
 		if (typeof newPath === 'string') {
