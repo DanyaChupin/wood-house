@@ -62,6 +62,8 @@ const SPECTRS_DATA = [
 			title: 'Пихта-цитрус',
 			information: ['пихта, апельсин, грйпфрут'],
 			price: '6 500 ₽',
+
+			time: '',
 		},
 		{
 			title: 'Травяной',
@@ -69,11 +71,13 @@ const SPECTRS_DATA = [
 				'набор луговых и горных трав таких как: <strong>донник</strong>,<strong>мята</strong> и др.',
 			],
 			price: '6 500 ₽',
+			time: '',
 		},
 		{
 			title: 'Стандартный',
 			information: ['без добавок'],
 			price: '5 000 ₽',
+			time: '',
 		},
 	],
 	[
@@ -81,22 +85,27 @@ const SPECTRS_DATA = [
 			title: 'веники',
 			information: ['(уточняйте по наличию)'],
 			price: '550 ₽',
+			time: '',
 		},
 		{
 			title: 'фирменная шапочка из натуральной шерсти',
 			price: '4000 ₽',
+			time: '',
 		},
 		{
 			title: 'резиновые тапочки',
 			price: '1 500 ₽',
+			time: '',
 		},
 		{
 			title: 'кофейный скраб',
 			price: '500 ₽',
+			time: '',
 		},
 		{
 			title: 'медовый скраб',
 			price: '500 ₽',
+			time: '',
 		},
 	],
 ]
