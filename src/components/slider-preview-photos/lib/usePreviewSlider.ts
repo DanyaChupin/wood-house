@@ -14,9 +14,12 @@ export const usePreviewSlider = () => {
 	const [countImage, setCountImage] = useState(0)
 
 	useEffect(() => {
-		setTimeout(() => {
+		const timeout = setTimeout(() => {
 			setPrevImage(currentImage)
 		}, 500)
+		return () => {
+			clearTimeout(timeout)
+		}
 	}, [currentImage])
 
 	useEffect(() => {
