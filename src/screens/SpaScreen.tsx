@@ -1,3 +1,4 @@
+import { AnnotationLabel } from '@/components/annotationLabel/AnnotationLabel'
 import { MessageWrapper } from '@/components/message-wrapper'
 import { SpectrsBlock } from '@/components/spectrs-block'
 import { TitlePageInfo } from '@/components/title-page-info'
@@ -17,9 +18,15 @@ export function SpaScreen() {
 			<TitlePageInfo
 				title="Отдохнуть душой и телом"
 				description="Наши древесные сауны и купели идеально подойдут для вашего отдыха. 
-В каждом доме коттеджного комплекса есть сауна; ее использование входит  в стоимость аренды дома"
+В каждом доме коттеджного комплекса есть сауна; ее использование входит в стоимость аренды дома"
 				className="text-left"
 			>
+				<div className="my-[10px]">
+					<AnnotationLabel
+						bgColor="bg-WHITE_700 lg:*:text-[18px]"
+						lable="Стоимость бани от 2500₽ в час"
+					/>
+				</div>
 				<div className="mb-[50px] flex flex-col gap-[15px] lg:gap-[20px]">
 					<ImageBlock
 						imgUrl={spa1}
