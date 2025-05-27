@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { Header } from '@/components/header'
+import { Metrika } from '@/shared/metrika/Metrika'
 import '../shared/styles/global.css'
 
 const Footer = dynamic(() => import('@/components/footer/Footer'))
@@ -55,6 +56,7 @@ export default function RootLayout({
 					{children}
 					<Footer />
 				</div>
+				<Metrika />
 			</body>
 		</html>
 	)
