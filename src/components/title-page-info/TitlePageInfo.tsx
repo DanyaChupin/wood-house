@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 interface ITitlePageInfo {
 	title: string
-	description: string
+	description?: string
 	children: ReactNode
 	className?: string
 }
@@ -23,9 +23,11 @@ export function TitlePageInfo({
 				>
 					{title}
 				</h1>
-				<p id="sliderDescription" className="sm:max-w-[375px]">
-					{description}
-				</p>
+				{description && (
+					<p id="sliderDescription" className="sm:max-w-[375px]">
+						{description}
+					</p>
+				)}
 			</div>
 			{children}
 		</section>
