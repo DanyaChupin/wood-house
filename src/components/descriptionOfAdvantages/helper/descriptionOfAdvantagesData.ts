@@ -21,7 +21,7 @@ export const descriptionOfAdvantagesData = [
 	},
 	{
 		title: 'Баня, купель и массаж',
-		description: `В каждом доме — своя баня и тёплая уличная купель.\nДля максимального расслабления — массаж\nи ароматерапия от профессионалов.`,
+		description: `Для максимального расслабления — массаж\nи ароматерапия от профессионалов.`,
 		images: [{ img: houseElem5 }, { img: houseElem6 }],
 		subPrice: false,
 	},
