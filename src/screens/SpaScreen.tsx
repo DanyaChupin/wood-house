@@ -1,8 +1,8 @@
+import { ImageBlock } from '@/shared/ui'
 import { AnnotationLabel } from '@/widgets/annotationLabel'
 import { MessageWrapper } from '@/widgets/message-wrapper'
 import { SpectrsBlock } from '@/widgets/spectrs-block'
 import { TitlePageInfo } from '@/widgets/title-page-info'
-import { ImageBlock } from '@/shared/ui'
 
 export function SpaScreen() {
 	return (
@@ -63,13 +63,13 @@ export function SpaScreen() {
 					description={`Если же хочется более глубокого очищения,\nрасслабления и перезагрузки — у нас есть профессиональный банщик`}
 					routsButton={false}
 				>
-					<div>
+					<div className="min-w-0 flex flex-col gap-[16px]">
 						<ImageBlock
 							imgUrl="/images/spa/4.png"
-							className={`w-full h-full rounded-card-md lg:min-h-[420px]`}
+							className="w-full h-[400px] md:h-[300px] lg:h-[420px] rounded-card-md"
 							alt="Профессиональный банщик проводит банные ритуалы — Вудхаус"
 						/>
-						<p className="mt-[16px]">
+						<p>
 							Соблюдая лучшие традиции оздоровления,
 							<br /> он проведет банные ритуалы, расскажет
 							<br /> историю процедур

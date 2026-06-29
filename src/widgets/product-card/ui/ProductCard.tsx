@@ -26,14 +26,14 @@ export function ProductCard({ house, id }: { house: IHouseView; id: string }) {
 				/>
 			</div>
 			{isMobile ? (
-				<ProductSliderMobile imgUrls={house.mainImgMobile} />
+				<ProductSliderMobile imgUrls={house.mainImgs} />
 			) : (
-				<ProductSliderDesk imgUrls={house.mainImgDesktop} />
+				<ProductSliderDesk imgUrls={house.mainImgs} />
 			)}
 
 			<ProductInformation
 				houseName={house.title}
-				prevImg={house.prevImg}
+				prevImg={house.mainImgs}
 			/>
 		</section>
 	)

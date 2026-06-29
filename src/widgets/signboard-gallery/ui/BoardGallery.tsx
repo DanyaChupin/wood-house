@@ -8,7 +8,7 @@ export function BoardGallery() {
 				<BoardGalleryItem
 					images={img.img}
 					position={img.position}
-					key={img.img[0].src}
+					key={img.img[0]}
 				/>
 			))}
 		</div>

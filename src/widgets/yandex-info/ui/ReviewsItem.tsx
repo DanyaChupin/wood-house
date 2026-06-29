@@ -1,19 +1,18 @@
 'use client'
 
-import { StaticImageData } from 'next/image'
 import { useBreakpoints } from '@/shared/lib/useBreakpoints'
 import { StarIcon } from '@/shared/icons/Star-icon'
 import { ImageBlock } from '@/shared/ui'
 import { SecondaryWrapper } from '@/shared/ui/wrappers/SecondaryWrapper'
 
-type Props = {
+interface IReviewsItemProps {
 	name: string
 	message: string
-	avatarImg: StaticImageData
-	images: StaticImageData[]
+	avatarImg: string
+	images: string[]
 	position: string
 }
-export function ReviewsItem(props: Props) {
+export function ReviewsItem(props: IReviewsItemProps) {
 	const { name, position, message, images, avatarImg } = props
 	const { isMobile } = useBreakpoints()
 	return (
@@ -22,7 +21,7 @@ export function ReviewsItem(props: Props) {
 				<div className="flex gap-[20px]">
 					{images.map((img) => (
 						<ImageBlock
-							key={img.src}
+							key={img}
 							imgUrl={img}
 							className="w-full lg:h-[100px] h-[70px] rounded-[8px] lg:rounded-[16px]"
 							alt="Отзыв от яндекс"
@@ -61,7 +60,7 @@ export function ReviewsItem(props: Props) {
 							<div className="flex gap-[3px] ml-auto">
 								{images.map((img) => (
 									<ImageBlock
-										key={img.src}
+										key={img}
 										imgUrl={img}
 										className="w-[40px] h-[40px] rounded-[8px] "
 										alt="Отзыв от яндекс"

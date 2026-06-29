@@ -1,16 +1,16 @@
 'use client'
 
-import { IImg } from '@/entities/house'
 import { useBreakpoints } from '@/shared/lib/useBreakpoints'
 import { ImageBlock } from '@/shared/ui'
 import { Convenience } from './Convenience'
+import { IImg } from '@/entities/house'
 
 interface IProductInfomation {
 	houseName: string
 	prevImg: IImg[]
 }
 
-export function ProductInformation({ prevImg, houseName }: IProductInfomation) {
+export function ProductInformation({ prevImg }: IProductInfomation) {
 	const { isMobile } = useBreakpoints()
 	return (
 		<div className="lg:flex lg:justify-between lg:gap-[60px] lg:w-full">

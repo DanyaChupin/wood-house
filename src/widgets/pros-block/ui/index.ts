@@ -1,1 +1,1 @@
-export { ProsBlock } from './ProsBlock'
+export { default as ProsBlock } from './ProsBlock'
