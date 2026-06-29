@@ -1,38 +1,36 @@
 import { Metadata } from 'next'
+import { SITE_URLS } from '@/shared/const/site'
 
 export const metadata: Metadata = {
 	title: 'Публичная оферта',
+	description:
+		'Публичная оферта на оказание услуг коттеджного комплекса Вудхаус. Условия аренды загородных домов, бани и спа-услуг в Истринском районе Подмосковья.',
 	robots: {
-		index: true,
-		follow: true,
-	},
-	icons: {
-		icon: ['./favicon.ico?v=4'],
-		shortcut: ['./favicon.ico?v=4'],
-		apple: ['./apple-touch-icon.png'],
+		index: false,
+		follow: false,
 	},
 	openGraph: {
-		title: 'Вудхаус | Политика конфиденциальности',
-		description: '',
-		url: 'https://вудхаус.рф/oferta',
+		title: 'Вудхаус | Публичная оферта',
+		description:
+			'Публичная оферта на оказание услуг коттеджного комплекса Вудхаус.',
+		url: SITE_URLS.oferta,
 		siteName: 'Вудхаус',
 		images: [
 			{
-				url: '../../shared/images/massages-4.png',
+				url: '/images/black-house-desk-1.png',
 				width: 800,
 				height: 600,
-				alt: 'Посуточная аренда загородного дома в 50 км от МКАД | Вудxаус',
+				alt: 'Посуточная аренда загородного дома в 50 км от МКАД | Вудхаус',
 			},
 		],
 		locale: 'ru_RU',
 		type: 'website',
 	},
-
-	alternates: { canonical: 'https://вудхаус.рф/oferta' },
+	alternates: { canonical: SITE_URLS.oferta },
 }
 export default function Policy() {
 	return (
-		<div id="sliderScreen" className="w-full flex flex-col">
+		<main id="sliderScreen" className="w-full flex flex-col">
 			<h1
 				id="sliderTitle"
 				className="text-[34px] text-center transition-transform sm:text-[42px] lg:text-[88px] leading-[32px] sm:leading-[42px] lg:leading-[90px] 2xl:leading-[112px] 2xl:text-[96px] mb-[50px]"
@@ -316,6 +314,6 @@ export default function Policy() {
 				КПП: 773643001
 				<br />
 			</p>
-		</div>
+		</main>
 	)
 }

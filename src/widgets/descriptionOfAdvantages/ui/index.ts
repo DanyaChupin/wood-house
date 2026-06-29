@@ -1,0 +1,1 @@
+export { DescriptionOfAdvantages } from './DescriptionOfAdvantages'

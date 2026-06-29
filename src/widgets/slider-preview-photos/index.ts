@@ -1,0 +1,1 @@
+export { SliderPreviewPhotos } from './ui'

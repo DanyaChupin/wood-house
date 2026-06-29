@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { SITE_URLS } from '@/shared/const/site'
 
 export default function robots(): MetadataRoute.Robots {
 	return {
@@ -6,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
 			userAgent: '*',
 			allow: '/',
 		},
-		sitemap: 'https://вудхаус.рф/sitemap.xml',
+		sitemap: `${SITE_URLS.home}/sitemap.xml`,
 	}
 }

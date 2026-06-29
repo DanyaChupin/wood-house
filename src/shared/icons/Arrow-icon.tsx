@@ -9,7 +9,7 @@ export function ArrowIcon() {
 		>
 			<path
 				d="M1.5 5H12.5M12.5 5L7.91176 1M12.5 5L7.91176 9"
-				stroke="white"
+				stroke="currentColor"
 				strokeWidth="1.5"
 				strokeLinecap="round"
 				strokeLinejoin="round"

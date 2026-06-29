@@ -1,0 +1,24 @@
+import { memo } from 'react'
+import { IImg } from '@/entities/house'
+import { ImageBlock } from '@/shared/ui'
+
+function ProductSliderDeskMap({ imgUrls }: { imgUrls: IImg[] }) {
+	return (
+		<>
+			{imgUrls.map((img) => (
+				<div
+					className="shrink-0 snap-center w-full h-full"
+					key={img.src}
+				>
+					<ImageBlock
+						className="h-full shrink-0 w-full"
+						imgUrl={img.src}
+						alt={img.alt}
+					/>
+				</div>
+			))}
+		</>
+	)
+}
+
+export default memo(ProductSliderDeskMap)

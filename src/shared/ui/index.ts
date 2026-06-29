@@ -1,1 +1,5 @@
 export { ImageBlock } from './Img-block'
+export { Button } from './button'
+export type { IButtonProps, ButtonVariant, ButtonSize, ButtonRounded } from './button'
+export { ImageViewer } from './image-viewer'
+export type { IViewerImage } from './image-viewer'
