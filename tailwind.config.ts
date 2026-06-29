@@ -2,9 +2,11 @@ import type { Config } from 'tailwindcss'
 
 export default {
 	content: [
-		'./src/screens/**/*.{js,ts,jsx,tsx,mdx}',
-		'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/screens/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/widgets/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/features/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/entities/**/*.{js,ts,jsx,tsx,mdx}',
 		'./src/shared/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
@@ -91,6 +93,11 @@ export default {
 				xl: '1280px',
 				'2xl': '1440px',
 			},
+			borderRadius: {
+				'card-sm': '16px',
+				'card-md': '24px',
+				'card-lg': '32px',
+			},
 			colors: {
 				GRAY_550: '#636362',
 				GRAY_500: '#4B4B4B',
@@ -101,7 +108,9 @@ export default {
 				GRAY_200: '#F5F5F5',
 				WHITE_300: '#F8F7F5',
 				WHITE_700: '#F3F0EA',
+				WHITE_500: '#FFFFFF',
 				WHITE_800: '#F2F0EC',
+				BLACK_500: '#000000',
 			},
 		},
 	},

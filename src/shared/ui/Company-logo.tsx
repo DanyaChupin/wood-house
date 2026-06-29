@@ -48,12 +48,16 @@ function CompanyLogo() {
 			}, 200)
 		}
 	}
+	const isHome = pathName === '/'
+
 	return (
 		<button
 			onClick={animChangePage}
-			className="flex gap-[4px] items-center text-[23px] lg:text-[26px]"
+			className={`flex gap-[4px] items-center text-[23px] lg:text-[36px] ${isHome ? 'md:text-WHITE_500' : 'md:text-BLACK_500'}`}
 		>
-			<Logo />
+			<div className="w-[22px] h-[22px] md:h-[30px] md:w-[30px] lg:w-[40px] lg:h-[40px]">
+				<Logo />
+			</div>
 			Вудхаус
 		</button>
 	)

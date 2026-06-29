@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 
 interface IImageBlock {
-	imgUrl: StaticImageData
+	imgUrl: string
 	className?: string
 	alt: string
 	id?: string
@@ -12,16 +12,17 @@ interface IImageBlock {
 export function ImageBlock({ imgUrl, className = '', alt, id }: IImageBlock) {
 	const [isLoading, setIsLoading] = useState(true)
 	return (
-		<div id={id && id} className="relative w-full">
+		<div id={id} className={`relative overflow-hidden ${className}`}>
 			<div
-				className={`${isLoading ? 'animate-pulse' : 'opacity-100'} z-10 absolute transition-opacity bg-gray-200 ${className ? className : ''}`}
+				className={`absolute inset-0 z-10 bg-gray-200 transition-opacity duration-500 ${isLoading ? 'animate-pulse opacity-100' : 'opacity-0'}`}
 			/>
 			<Image
-				className={`object-cover relative z-20 ${!isLoading ? 'opacity-100' : 'opacity-0'} duration-500 transition-opacity ${className ? className : ''}`}
+				className={`object-cover z-20 transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}
 				onLoad={() => setIsLoading(false)}
 				loading="lazy"
 				src={imgUrl}
 				alt={alt}
+				fill
 			/>
 		</div>
 	)

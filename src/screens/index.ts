@@ -1,4 +1,3 @@
-export { HomeScreen } from './HomeScreen'
-export { SpaScreen } from './SpaScreen'
-export { MessagesScreen } from './MassagesScreen'
 export { BronScreen } from './BronScreen'
+export { MessagesScreen } from './MassagesScreen'
+export { SpaScreen } from './SpaScreen'

@@ -1,9 +1,10 @@
+import { SITE_URLS } from '@/shared/const/site'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Политика конфиденциальности',
-	description: '',
-	keywords: '',
+	description:
+		'Политика конфиденциальности коттеджного комплекса Вудхаус. Условия обработки и защиты персональных данных пользователей сайта.',
 	robots: {
 		index: true,
 		follow: true,
@@ -15,12 +16,12 @@ export const metadata: Metadata = {
 	},
 	openGraph: {
 		title: 'Вудхаус | Политика конфиденциальности',
-		description: '',
-		url: 'https://вудхаус.рф/policy',
+		description: 'Политика конфиденциальности коттеджного комплекса Вудхаус.',
+		url: SITE_URLS.policy,
 		siteName: 'Вудхаус',
 		images: [
 			{
-				url: '../../shared/images/massages-4.png',
+				url: '/images/black-house-desk-1.png',
 				width: 800,
 				height: 600,
 				alt: 'Посуточная аренда загородного дома в 50 км от МКАД | Вудxаус',
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
 		type: 'website',
 	},
 
-	alternates: { canonical: 'https://вудхаус.рф/policy' },
+	alternates: { canonical: SITE_URLS.policy },
 }
 export default function Policy() {
 	return (

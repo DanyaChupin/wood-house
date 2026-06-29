@@ -1,9 +1,10 @@
+import { SITE_URLS } from '@/shared/const/site'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-	title: 'Правила-посещения',
-	description: '',
-	keywords: '',
+	title: 'Правила посещения',
+	description:
+		'Правила посещения коттеджного комплекса Вудхаус. Условия заезда, проживания и пользования баней, купелью и спа-услугами.',
 	robots: {
 		index: true,
 		follow: true,
@@ -14,13 +15,13 @@ export const metadata: Metadata = {
 		apple: ['./apple-touch-icon.png'],
 	},
 	openGraph: {
-		title: 'Вудхаус | Правила-посещения',
-		description: '',
-		url: 'https://вудхаус.рф/rules',
+		title: 'Вудхаус | Правила посещения',
+		description: 'Правила посещения коттеджного комплекса Вудхаус.',
+		url: SITE_URLS.rules,
 		siteName: 'Вудхаус',
 		images: [
 			{
-				url: '../../shared/images/massages-4.png',
+				url: '/images/black-house-desk-1.png',
 				width: 800,
 				height: 600,
 				alt: 'Посуточная аренда загородного дома в 50 км от МКАД | Вудxаус',
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
 		type: 'website',
 	},
 
-	alternates: { canonical: 'https://вудхаус.рф/rules' },
+	alternates: { canonical: SITE_URLS.rules },
 }
 export default function Policy() {
 	return (
