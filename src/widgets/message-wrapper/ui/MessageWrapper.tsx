@@ -21,7 +21,7 @@ export function MessageWrapper({
 			className={`p-[25px] flex flex-col gap-y-[25px] 2xl:gap-y-[50px] lg:p-[50px] bg-WHITE_300 rounded-card-md`}
 		>
 			<div
-				className={`flex md:flex-col mdPlus:flex-row flex-col gap-[15px]`}
+				className={`flex md:flex-col justify-between mdPlus:flex-row flex-col gap-[15px]`}
 			>
 				<div className="shrink-0 mdPlus:max-w-[340px]">
 					<MessageBlock

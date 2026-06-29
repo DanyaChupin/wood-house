@@ -1,12 +1,11 @@
-import { StaticImageData } from 'next/image'
 import { ImageBlock } from '@/shared/ui'
 
-type Props = {
-	images: StaticImageData[]
+interface IBoardGalleryItemProps {
+	images: string[]
 	position: string
 }
-export function BoardGalleryItem(props: Props) {
-	const { images, position } = props
+
+export function BoardGalleryItem({ images, position }: IBoardGalleryItemProps) {
 	return (
 		<div
 			className={`flex w-full h-fit lg:ease-in-out lg:hover:translate-y-6 lg:transition-transform duration-500 ${position} min-w-[105px] flex-col gap-[10px]`}
@@ -16,7 +15,7 @@ export function BoardGalleryItem(props: Props) {
 			></div>
 			{images.map((img) => (
 				<ImageBlock
-					key={img.src}
+					key={img}
 					imgUrl={img}
 					className="w-full"
 					alt="Фотогалерея коттеджного комплекса Вудхаус"

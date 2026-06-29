@@ -1,2 +1,2 @@
-export { type IPhotoGallery } from './type'
+export { type IPhotoGalleryItem } from './type'
 export { photoGalleryData } from './photoGalleryData'

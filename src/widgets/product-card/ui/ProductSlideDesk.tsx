@@ -1,19 +1,15 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { StaticImageData } from 'next/image'
+import { IImg } from '@/entities/house'
 import { ArrowIcon } from '@/shared/icons/Arrow-icon'
 import { animateSlider } from '../lib/animateSlider'
 import ProductSliderDeskMap from './ProductSliderDeskMap'
 
 interface IProductSliderDesk {
-	imgUrls: StaticImageData[]
-	alt: string
+	imgUrls: IImg[]
 }
-export default function ProductSliderDesk({
-	imgUrls,
-	alt,
-}: IProductSliderDesk) {
+export default function ProductSliderDesk({ imgUrls }: IProductSliderDesk) {
 	const slideRef = useRef<HTMLDivElement | null>(null)
 	const [isDisabled, setIsDisabled] = useState(false)
 	useEffect(() => {
@@ -35,7 +31,7 @@ export default function ProductSliderDesk({
 				ref={slideRef}
 				className={`w-full flex snap-mandatory snap-x scrollbar-hide overflow-x-scroll mb-[30px] rounded-card-md`}
 			>
-				<ProductSliderDeskMap imgUrls={imgUrls} alt={alt} />
+				<ProductSliderDeskMap imgUrls={imgUrls} />
 			</div>
 			<div className="absolute bottom-[20px] right-[20px] gap-[20px] flex z-20">
 				<button
