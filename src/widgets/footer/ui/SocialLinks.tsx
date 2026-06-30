@@ -17,8 +17,11 @@ export function SocialLinks() {
 					target="_blank"
 					aria-label="телеграм ссылка woodhouse"
 					href="https://t.me/vudxauc"
+					className="bg-black text-WHITE_500 flex items-center rounded-full pl-[6px] pr-[20px]"
 				>
 					<TelegramIcon />
+
+					<p>Telegram</p>
 				</Link>
 			</div>
 			<p className="text-GRAY_400">
