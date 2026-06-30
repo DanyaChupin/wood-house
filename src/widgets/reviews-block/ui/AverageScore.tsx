@@ -24,7 +24,7 @@ export function AverageScore() {
 						/>
 					</svg>
 					<span className="text-[18px] font-bold font-[SFPro] leading-[20px]">
-						Средняя оценка 4,9 из 5
+						Средняя оценка 5 из 5
 					</span>
 				</div>
 				<p className="mb-[16px] lg:mb-0 text-[18px] font-medium leading-[26px] whitespace-pre-wrap text-[#666666]">

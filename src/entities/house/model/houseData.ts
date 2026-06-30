@@ -5,7 +5,7 @@ export const HOUSES_DATA: IHouseView[] = [
 	{
 		title: 'Темный дом',
 		capacity: '2 - 4 гостя',
-		livingArea: '98.3м2',
+		livingArea: '71м2',
 		terraceArea: '25м2',
 		mainImgs: BLACK_HOUSE_IMAGES.images,
 
@@ -41,7 +41,7 @@ export const HOUSES_DATA: IHouseView[] = [
 	{
 		title: 'Светлый дом',
 		capacity: '2 - 4 гостя',
-		livingArea: '98.6м2',
+		livingArea: '71м2',
 		terraceArea: '25м2',
 		mainImgs: WHITE_HOUSE_IMAGES.images,
 		facilities: {

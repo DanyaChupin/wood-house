@@ -103,7 +103,7 @@ export function ImageViewer({
 							width={0}
 							height={0}
 							sizes="100vw"
-							className="w-full h-full min-h-[50svh] min-w-[30svw] block"
+							className="w-full h-full min-h-[50svh] object-contain min-w-[30svw] block"
 						/>
 					</motion.div>
 				</AnimatePresence>

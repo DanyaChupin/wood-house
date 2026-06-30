@@ -6,7 +6,7 @@ const achievementsData = [
 		description: 'гостей побывали у нас за этот год',
 	},
 	{
-		title: '4.9★',
+		title: '5★',
 		description: 'средняя оценка на Яндекс.Картах',
 	},
 	{

@@ -7,7 +7,6 @@ export function TelegramIcon() {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<rect width="40" height="40" rx="20" fill="black" />
 			<path
 				fillRule="evenodd"
 				clipRule="evenodd"

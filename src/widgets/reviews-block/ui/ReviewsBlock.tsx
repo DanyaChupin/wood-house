@@ -5,7 +5,7 @@ import { ReviewGallery } from './ReviewGallery'
 export function ReviewsBlock() {
 	return (
 		<section>
-			<div className="lg:bg-[#F8F7F5] lg:border-[1px] lg:rounded-[32px] lg:h-[640px] lg:border-[#EDEDED] lg:flex">
+			<div className="lg:bg-[#F8F7F5] overflow-hidden lg:border-[1px] lg:rounded-[32px] lg:h-[520px] 2xl:h-[640px] lg:border-[#EDEDED] lg:flex">
 				<div className="lg:min-w-[660px] lg:p-[50px]">
 					<p className="mb-[24px] 2xl:mb-[48px] font-[SoyuzGrotesk] font-bold text-[40px] leading-[44px] whitespace-pre-wrap 2xl:text-[64px] 2xl:leading-[100%]">
 						{`Наши гости деляться\nсвоими эмоциями\nна Яндекс Картах.\nПоделитесь и вы`}
@@ -17,7 +17,7 @@ export function ReviewsBlock() {
 					</div>
 				</div>
 				<div className="hidden h-full overflow-hidden lg:block">
-					<ReviewGallery className="gap-y-[12px] overflow-y-scroll h-full flex flex-col scrollbar-hide [&>li:first-child]:mt-[50px] [&>li:last-child]:mb-[50px]" />
+					<ReviewGallery className="gap-y-[12px] overflow-x-hidden overflow-y-scroll h-full flex flex-col scrollbar-hide [&>li:first-child]:mt-[50px] [&>li:last-child]:mb-[50px]" />
 				</div>
 			</div>
 		</section>

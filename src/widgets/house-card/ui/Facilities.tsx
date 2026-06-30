@@ -37,6 +37,7 @@ export function Facilities(props: Props) {
 							<svg
 								width="17"
 								height="17"
+								className="shrink-0"
 								viewBox="0 0 17 17"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
@@ -46,12 +47,12 @@ export function Facilities(props: Props) {
 									fill="black"
 								/>
 							</svg>
-							<p className="text-[16px] font-[SFPro]">
+							<p className="text-[16px] break-all font-[SFPro]">
 								{elem.title}
 							</p>
 						</div>
 						{elem.subPrice ? (
-							<span className="py-[2px] px-[8px] rounded-full bg-[#04670026] text-[#046700] text-[14px] font-medium font-[SFPro]">
+							<span className="py-[2px] shrink-0 px-[8px] rounded-full bg-[#04670026] text-[#046700] text-[14px] font-medium font-[SFPro]">
 								доп. стоимость
 							</span>
 						) : null}
