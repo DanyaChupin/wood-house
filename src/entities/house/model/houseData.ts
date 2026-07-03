@@ -25,7 +25,7 @@ export const HOUSES_DATA: IHouseView[] = [
 				},
 				{
 					title: 'теплая купель для купания',
-					subPrice: false,
+					subPrice: true,
 				},
 				{
 					title: 'баня',
@@ -60,7 +60,7 @@ export const HOUSES_DATA: IHouseView[] = [
 				},
 				{
 					title: 'теплая купель для купания',
-					subPrice: false,
+					subPrice: true,
 				},
 				{
 					title: 'баня',
