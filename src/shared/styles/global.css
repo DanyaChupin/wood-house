@@ -69,7 +69,7 @@ span {
 }
 .open {
 	opacity: 1;
-	filter: blur(0px);
+	filter: none;
 }
 
 .translateUpMedium {

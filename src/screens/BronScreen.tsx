@@ -2,7 +2,9 @@
 
 import dynamic from 'next/dynamic'
 
-const Booking = dynamic(() => import('@/features/booking').then(m => m.Booking))
+const Booking = dynamic(() =>
+	import('@/features/booking').then((m) => m.Booking)
+)
 export function BronScreen() {
 	return (
 		<main
