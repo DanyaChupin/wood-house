@@ -16,8 +16,8 @@ export const HOUSES_DATA: IHouseView[] = [
 					subPrice: false,
 				},
 				{
-					title: 'кухня-гостиная  с 2 спальными местами',
-					subPrice: true,
+					title: 'кухня-гостиная с 2 спальными местами',
+					subPrice: false,
 				},
 				{
 					title: 'ванная комната',
@@ -25,11 +25,11 @@ export const HOUSES_DATA: IHouseView[] = [
 				},
 				{
 					title: 'теплая купель для купания',
-					subPrice: true,
+					subPrice: false,
 				},
 				{
 					title: 'баня',
-					subPrice: false,
+					subPrice: true,
 				},
 				{
 					title: 'мангальная зона',
@@ -52,7 +52,7 @@ export const HOUSES_DATA: IHouseView[] = [
 				},
 				{
 					title: 'кухня-гостиная  с 2 спальными местами',
-					subPrice: true,
+					subPrice: false,
 				},
 				{
 					title: 'ванная комната',
@@ -60,11 +60,11 @@ export const HOUSES_DATA: IHouseView[] = [
 				},
 				{
 					title: 'теплая купель для купания',
-					subPrice: true,
+					subPrice: false,
 				},
 				{
 					title: 'баня',
-					subPrice: false,
+					subPrice: true,
 				},
 				{
 					title: 'мангальная зона',
