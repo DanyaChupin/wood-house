@@ -28,9 +28,8 @@ export function Booking() {
 	}, [])
 
 	return (
-		<div
-			className="left rounded-[32px] overflow-hidden min-h-[500px] bg-GRAY_200"
-			id="booking_iframe"
-		/>
+		<div className="left rounded-[32px] overflow-hidden min-h-[500px] bg-GRAY_200">
+			<div id="booking_iframe" />
+		</div>
 	)
 }
